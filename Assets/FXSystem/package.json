@@ -1,0 +1,9 @@
+﻿{
+  "name": "com.weackss.scenario-fx-system",
+  "displayName": "Scenario.FXSystem",
+  "version": "0.0.0",
+  "description": "FAwesome Games scenario based FXSystem",
+  "license": "Dolbaeb Intenational",
+  "category": "System",
+  "dependencies": {}
+}

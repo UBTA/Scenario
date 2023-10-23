@@ -1,0 +1,9 @@
+﻿{
+  "name": "com.weackss.scenario-waveworld-system",
+  "displayName": "Scenario.WaveWorldSystem",
+  "version": "0.0.0",
+  "description": "FAwesome Games scenario based WaveWorldSystem",
+  "license": "Dolbaeb Intenational",
+  "category": "System",
+  "dependencies": {}
+}
