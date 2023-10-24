@@ -90,6 +90,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 022548923ded4f80aa0fa99e1929d490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  systems:
-  - {fileID: 4473708048397465228}
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 4473708048397465228}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: systems
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[FAwesome.ScenarioCore.GameFramework.Systems.ISystem,
+        Scenario.GameFramework]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
   exampleSystem: {fileID: 4473708048397465228}

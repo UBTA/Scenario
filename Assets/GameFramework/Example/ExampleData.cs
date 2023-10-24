@@ -5,7 +5,7 @@ using UnityEngine;
 namespace FAwesome.ScenarioCore.GameFramework.Example
 {
     [CreateAssetMenu(fileName = "ExampleData", menuName = "ScenarioFramework/Example/ExampleData", order = 1)]
-    public class ExampleData : DataBase<ExamplePData>
+    public class ExampleData : DataPrefs<ExamplePData>
     {
         public ExampleInstance[] Instances;
         public float SpawnDelay;
