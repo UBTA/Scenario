@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Scenario.UIFramework</name>
+    </assembly>
+    <members>
+        <member name="T:FAwesome.ScenarioCore.UIFramework.UI`1">
+            <summary>
+            Хэндлит работу экранов и их процесс инициализации
+            </summary>
+            <typeparam name="B">
+            Тип шины (необходимо унаследовааться от UIBus)
+            </typeparam>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.UI`1.Get``1">
+            <summary>
+            Получение экрана по типу
+            </summary>
+            <typeparam name="T">
+            Тип экрана
+            </typeparam>
+            <returns>
+            Возвращает ссылку на экран 
+            </returns>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.UI`1.Show``1(System.Boolean)">
+            <summary>
+            Показ экрана с его анимацией (если есть)
+            </summary>
+            <param name="isSolo">
+            Если true все остальные экраны (без доп условий) будут скрыты 
+            </param>
+            <typeparam name="T">
+            Возвращает ссылку на экран 
+            </typeparam>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.UI`1.ShowImmediately``1(System.Boolean)">
+            <summary>
+            Показ экрана игнорируя анимацию (если есть)
+            </summary>
+            <param name="isSolo">
+            Если true все остальные экраны (без доп условий) будут скрыты 
+            </param>
+            <typeparam name="T">
+            Возвращает ссылку на экран 
+            </typeparam>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.UI`1.Hide``1">
+            <summary>
+            Сокрытие экрана с его анимацией (если есть)
+            </summary>
+            <typeparam name="T">
+            Возвращает ссылку на экран 
+            </typeparam>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.UI`1.HideImmediately``1">
+            <summary>
+            Сокрытие экрана экрана игнорируя анимацию (если есть)
+            </summary>
+            <typeparam name="T">
+            Возвращает ссылку на экран 
+            </typeparam>
+        </member>
+        <member name="T:FAwesome.ScenarioCore.UIFramework.UIScenario`1">
+            <summary>
+            Внедрение в работу сценария интерфейса UI
+            </summary>
+            <typeparam name="B">
+            Тип шины (необходимо унаследовааться от UIBus)
+            </typeparam>
+        </member>
+    </members>
+</doc>
