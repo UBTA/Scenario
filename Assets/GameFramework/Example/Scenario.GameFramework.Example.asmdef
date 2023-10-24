@@ -1,0 +1,14 @@
+{
+    "name": "Scenario.GameFramework.Example",
+    "rootNamespace": "FAwesome.ScenarioCore.GameFramework.Example",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

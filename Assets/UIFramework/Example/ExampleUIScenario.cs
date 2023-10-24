@@ -1,10 +1,9 @@
 using System.Threading.Tasks;
 using DG.Tweening;
 using FAwesome.ScenarioCore.GameFramework.Example;
-using FAwesome.ScenarioCore.UIFramework;
 using UnityEngine;
 
-namespace ScenarioCore.UIFramework.Example
+namespace FAwesome.ScenarioCore.UIFramework.Example
 {
     public class ExampleUIScenario : UIScenario<ExampleBus>
     {

@@ -1,0 +1,17 @@
+{
+    "name": "Scenario.UIFramework.Example",
+    "rootNamespace": "FAwesome.ScenarioCore.UIFramework.Example",
+    "references": [
+        "Scenario.GameFramework.Example",
+        "DOTween.Modules"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

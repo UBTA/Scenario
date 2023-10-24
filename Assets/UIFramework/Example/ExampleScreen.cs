@@ -2,7 +2,7 @@ using FAwesome.ScenarioCore.GameFramework.Example;
 using FAwesome.ScenarioCore.UIFramework.UIElements;
 using UnityEngine;
 
-namespace ScenarioCore.UIFramework.Example
+namespace FAwesome.ScenarioCore.UIFramework.Example
 {
     public class ExampleScreen : ScreenView<ExampleBus>
     {
