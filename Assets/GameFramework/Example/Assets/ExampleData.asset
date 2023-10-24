@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32d456ef65064cc5af8516ed8ce0db22, type: 3}
+  m_Name: ExampleData
+  m_EditorClassIdentifier: 
+  UseInspectorData: 0
+  PData:
+    gameSessionsCount: 0
+  Instances:
+  - {fileID: 4751405198099258049, guid: 75749e903eec30443bf318ea208bbde2, type: 3}
+  - {fileID: 4450777938851410063, guid: 6d791e4f5a6649940b4814d43531c1e2, type: 3}
+  SpawnDelay: 0.2
