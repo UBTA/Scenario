@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace FAwesome.ScenarioCore.UIFramework.Example
 {
+    
     public class ExampleScreen : ScreenView<ExampleBus>
     {
         [SerializeField] private CounterView sessionsCounter;

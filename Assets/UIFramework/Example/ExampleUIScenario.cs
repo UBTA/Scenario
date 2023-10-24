@@ -5,6 +5,7 @@ using UnityEngine;
 
 namespace FAwesome.ScenarioCore.UIFramework.Example
 {
+    
     public class ExampleUIScenario : UIScenario<ExampleBus>
     {
         [SerializeField] private ExampleSystem exampleSystem;

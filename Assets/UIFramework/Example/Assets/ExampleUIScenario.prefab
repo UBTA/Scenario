@@ -355,10 +355,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aab9c568743f4d18b949e8d5210bb1e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  systems:
-  - {fileID: 891319621929551575}
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 663359659717221679}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: systems
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[FAwesome.ScenarioCore.GameFramework.Systems.ISystem,
+        Scenario.GameFramework]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
   UI: {fileID: 1756032028101167268}
-  exampleSystem: {fileID: 891319621929551575}
+  exampleSystem: {fileID: 663359659717221679}
 --- !u!1 &6335691255433964661
 GameObject:
   m_ObjectHideFlags: 0
@@ -590,7 +614,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2895353352315499973}
-  - component: {fileID: 891319621929551575}
+  - component: {fileID: 663359659717221679}
   m_Layer: 0
   m_Name: ExampleUISystem
   m_TagString: Untagged
@@ -613,7 +637,7 @@ Transform:
   m_Father: {fileID: 5524317469278404455}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &891319621929551575
+--- !u!114 &663359659717221679
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -622,7 +646,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6890888939573103867}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0367985e535a4ddcb0c21d72f1d84983, type: 3}
+  m_Script: {fileID: 11500000, guid: dab92f48a9b6b12499dc85a6564a7ae9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Data: {fileID: 11400000, guid: c3af6312c8abec04b810fac61c4a53eb, type: 2}

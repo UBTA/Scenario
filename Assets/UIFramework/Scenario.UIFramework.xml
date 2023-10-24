@@ -69,5 +69,21 @@
             Тип шины (необходимо унаследовааться от UIBus)
             </typeparam>
         </member>
+        <member name="T:FAwesome.ScenarioCore.UIFramework.Bus.UIBus">
+            <summary>
+            Ивентовая шина для отслеживаания игровых событий
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.Bus.UIBus.Data``1">
+            <summary>
+            Получение даты типа TData
+            </summary>
+            <typeparam name="TData">
+            Дженерик дата IData
+            </typeparam>
+            <returns>
+            Возвращает объект даты либо нул
+            </returns>
+        </member>
     </members>
 </doc>
