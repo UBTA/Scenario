@@ -1,4 +1,3 @@
-using FAwesome.ScenarioCore.GameFramework.Example;
 using FAwesome.ScenarioCore.UIFramework.UIElements;
 using UnityEngine;
 

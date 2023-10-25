@@ -6,73 +6,705 @@
     <members>
         <member name="T:FAwesome.ScenarioCore.UIFramework.UI`1">
             <summary>
-            Хэндлит работу экранов и их процесс инициализации
+            Хэндлит работу экранов и их процесс инициализации.
             </summary>
             <typeparam name="B">
-            Тип шины (необходимо унаследовааться от UIBus)
+            Тип шины (необходимо унаследовааться от UIBus).
             </typeparam>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.UI`1.Init(`0)">
+            <summary>
+            Инициализация всего интерфейса.
+            </summary>
+            <param name="Bus"></param>
         </member>
         <member name="M:FAwesome.ScenarioCore.UIFramework.UI`1.Get``1">
             <summary>
-            Получение экрана по типу
+            Получение экрана по типу.
             </summary>
             <typeparam name="T">
-            Тип экрана
+            Тип экрана.
             </typeparam>
             <returns>
-            Возвращает ссылку на экран 
+            Возвращает ссылку на экран.
             </returns>
         </member>
         <member name="M:FAwesome.ScenarioCore.UIFramework.UI`1.Show``1(System.Boolean)">
             <summary>
-            Показ экрана с его анимацией (если есть)
+            Показ экрана с его анимацией (если есть).
             </summary>
             <param name="isSolo">
-            Если true все остальные экраны (без доп условий) будут скрыты 
+            Если true все остальные экраны (без доп условий) будут скрыты.
             </param>
             <typeparam name="T">
-            Возвращает ссылку на экран 
+            Возвращает ссылку на экран.
             </typeparam>
         </member>
         <member name="M:FAwesome.ScenarioCore.UIFramework.UI`1.ShowImmediately``1(System.Boolean)">
             <summary>
-            Показ экрана игнорируя анимацию (если есть)
+            Показ экрана игнорируя анимацию (если есть).
             </summary>
             <param name="isSolo">
-            Если true все остальные экраны (без доп условий) будут скрыты 
+            Если true все остальные экраны (без доп условий) будут скрыты. 
             </param>
             <typeparam name="T">
-            Возвращает ссылку на экран 
+            Возвращает ссылку на экран. 
             </typeparam>
         </member>
         <member name="M:FAwesome.ScenarioCore.UIFramework.UI`1.Hide``1">
             <summary>
-            Сокрытие экрана с его анимацией (если есть)
+            Сокрытие экрана с его анимацией (если есть).
             </summary>
             <typeparam name="T">
-            Возвращает ссылку на экран 
+            Возвращает ссылку на экран. 
             </typeparam>
         </member>
         <member name="M:FAwesome.ScenarioCore.UIFramework.UI`1.HideImmediately``1">
             <summary>
-            Сокрытие экрана экрана игнорируя анимацию (если есть)
+            Сокрытие экрана экрана игнорируя анимацию (если есть).
             </summary>
             <typeparam name="T">
-            Возвращает ссылку на экран 
+            Возвращает ссылку на экран. 
             </typeparam>
+        </member>
+        <member name="T:FAwesome.ScenarioCore.UIFramework.UIElements.ScreenView`1">
+            <summary>
+            Сущность для описания поведения определенного экрана
+            </summary>
+            <typeparam name="B">
+            Дженерик типа шины с которой будет работать экран
+            </typeparam>
+        </member>
+        <member name="F:FAwesome.ScenarioCore.UIFramework.UIElements.ScreenView`1.Ignore">
+            <summary>
+            Если true то будет игнорировать все вызовы Show и Hide цепочки переключения экранов в UI 
+            </summary>
+        </member>
+        <member name="F:FAwesome.ScenarioCore.UIFramework.UIElements.ScreenView`1.ShowOnInit">
+            <summary>
+            Если true то автоматически будет показан после Init
+            </summary>
+        </member>
+        <member name="F:FAwesome.ScenarioCore.UIFramework.UIElements.ScreenView`1.Bus">
+            <summary>
+            Ссылка на шину
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.UIElements.ScreenView`1.SetBus(`0)">
+            <summary>
+            Сетает шину для работы экрана
+            </summary>
+            <param name="bus">
+            Ссылка на шину
+            </param>
+        </member>
+        <member name="T:FAwesome.ScenarioCore.UIFramework.UIElements.FillableImageBar">
+            <summary>
+            Базовая реализация бара на филлабл Image компоненте.
+            </summary>
+        </member>
+        <member name="F:FAwesome.ScenarioCore.UIFramework.UIElements.FillableImageBar.fillImage">
+            <summary>
+            Ссылка на Image компонент.
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.UIElements.FillableImageBar.Redraw">
+            <summary>
+            Вызов перерисовки филлера бара
+            </summary>
+        </member>
+        <member name="T:FAwesome.ScenarioCore.UIFramework.UIElements.ClickableView">
+            <summary>
+            Базовый view обработчик нажатий.
+            </summary>
+        </member>
+        <member name="F:FAwesome.ScenarioCore.UIFramework.UIElements.ClickableView.PointerDown">
+            <summary>
+            Анимация при зажатии.
+            </summary>
+        </member>
+        <member name="F:FAwesome.ScenarioCore.UIFramework.UIElements.ClickableView.PointerUp">
+            <summary>
+            Анимация при отпускании.
+            </summary>
+        </member>
+        <member name="F:FAwesome.ScenarioCore.UIFramework.UIElements.ClickableView.pointerTween">
+            <summary>
+            Твиин управляющий анимациями нажатий.
+            </summary>
+        </member>
+        <member name="E:FAwesome.ScenarioCore.UIFramework.UIElements.ClickableView.OnDownEvent">
+            <summary>
+            Событие на зажатие.
+            </summary>
+        </member>
+        <member name="E:FAwesome.ScenarioCore.UIFramework.UIElements.ClickableView.OnUpEvent">
+            <summary>
+            Событие на отпускание.
+            </summary>
+        </member>
+        <member name="E:FAwesome.ScenarioCore.UIFramework.UIElements.ClickableView.OnClickEvent">
+            <summary>
+            Событие на клик.
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.UIElements.ClickableView.OnPointerDown(UnityEngine.EventSystems.PointerEventData)">
+            <summary>
+            Обработчик зажатия.
+            </summary>
+            <param name="eventData"></param>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.UIElements.ClickableView.OnPointerUp(UnityEngine.EventSystems.PointerEventData)">
+            <summary>
+            Обработчик отпускания.
+            </summary>
+            <param name="eventData"></param>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.UIElements.ClickableView.OnPointerClick(UnityEngine.EventSystems.PointerEventData)">
+            <summary>
+            Обработчик клика.
+            </summary>
+            <param name="eventData"></param>
+        </member>
+        <member name="T:FAwesome.ScenarioCore.UIFramework.UIElements.CounterView">
+            <summary>
+            Базовый view счетчик.
+            Умеет выводить на экран значения и анимироваться при их изменении.
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.UIElements.CounterView.OnInit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.UIElements.CounterView.SetValue(System.String)">
+            <summary>
+            Устанавливает новое значение используя анимацию Attention.
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.UIElements.CounterView.SetPrefix(System.String)">
+            <summary>
+            Устанавливает новый префикс для значения счетчика.
+            </summary>
+            <param name="prefix">
+            </param>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.UIElements.CounterView.SetPostfix(System.String)">
+            <summary>
+            Устанавливает новый постфикс для значения счетчика.
+            </summary>
+            <param name="postfix">
+            </param>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.UIElements.CounterView.SetValueImmediately(System.String)">
+            <summary>
+            Устанавливает новое значение без анимации.
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="T:FAwesome.ScenarioCore.UIFramework.UIElements.BarViewBase">
+            <summary>
+            Базовая абстракция бара.
+            </summary>
+        </member>
+        <member name="F:FAwesome.ScenarioCore.UIFramework.UIElements.BarViewBase.Text">
+            <summary>
+            Текст в которй быр сетает свои значения.
+            </summary>
+        </member>
+        <member name="F:FAwesome.ScenarioCore.UIFramework.UIElements.BarViewBase.fillAmount">
+            <summary>
+            Показатель заполнения 0.0f-1.0f.
+            </summary>
+        </member>
+        <member name="P:FAwesome.ScenarioCore.UIFramework.UIElements.BarViewBase.FillAmount">
+            <summary>
+            Публичный геттер показателя заполнения 0.0f-1.0f.
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.UIElements.BarViewBase.SetFillAmount(System.Single,System.String,System.String,System.String)">
+            <summary>
+            Сетает значение бара.
+            </summary>
+            <param name="amount">Значение заполнения 0.0f-1.0f.</param>
+            <param name="text">Текст вписываемый в бар.</param>
+            <param name="textPrefix">Префикс для текста.</param>
+            <param name="textPostfix">Постфикс для текста.</param>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.UIElements.BarViewBase.Redraw">
+            <summary>
+            Вызов перерисовки филлера бара
+            </summary>
+        </member>
+        <member name="T:FAwesome.ScenarioCore.UIFramework.UIElements.View">
+            <summary>
+            Услованя еденица интерфейса.
+            </summary>
+        </member>
+        <member name="F:FAwesome.ScenarioCore.UIFramework.UIElements.View.CG">
+            <summary>
+            Ссылка на CanvasGroup этой View.
+            </summary>
+        </member>
+        <member name="F:FAwesome.ScenarioCore.UIFramework.UIElements.View.Rect">
+            <summary>
+            Ссылка на RectTransform этой View.
+            </summary>
+        </member>
+        <member name="F:FAwesome.ScenarioCore.UIFramework.UIElements.View.InAnimation">
+            <summary>
+            Задает анимацию Show.
+            </summary>
+        </member>
+        <member name="F:FAwesome.ScenarioCore.UIFramework.UIElements.View.OutAnimation">
+            <summary>
+            Задает анимацию Hide.
+            </summary>
+        </member>
+        <member name="F:FAwesome.ScenarioCore.UIFramework.UIElements.View.Attention">
+            <summary>
+            Задает Attention анимацию.
+            Зацикленная анимация повторяющаяся указанное количество раз.
+            </summary>
+        </member>
+        <member name="F:FAwesome.ScenarioCore.UIFramework.UIElements.View.OnShowStartEvent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FAwesome.ScenarioCore.UIFramework.UIElements.View.OnShowEndEvent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FAwesome.ScenarioCore.UIFramework.UIElements.View.OnHideStartEvent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FAwesome.ScenarioCore.UIFramework.UIElements.View.OnHideEndEvent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FAwesome.ScenarioCore.UIFramework.UIElements.View.InitLocalPosition">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FAwesome.ScenarioCore.UIFramework.UIElements.View.InitLocalRotation">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FAwesome.ScenarioCore.UIFramework.UIElements.View.InitLocalScale">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FAwesome.ScenarioCore.UIFramework.UIElements.View.animationTween">
+            <summary>
+            Твин контролирующий Show и Hide анимации.
+            </summary>
+        </member>
+        <member name="F:FAwesome.ScenarioCore.UIFramework.UIElements.View.attentionTween">
+            <summary>
+            Твин контролирующий Attention анимацию.
+            </summary>
+        </member>
+        <member name="F:FAwesome.ScenarioCore.UIFramework.UIElements.View.attentionCount">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.UIElements.View.Init">
+            <summary>
+            Инициализация View.
+            Подписка на внутренние события, стартовых кеширование параметров View.
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.UIElements.View.Show">
+            <summary>
+            Показать View анимированно.
+            </summary>
+            <returns>
+            Возвращает ссылку на твин управляющий вызывавемой анимацией.
+            </returns>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.UIElements.View.ShowImmediately">
+            <summary>
+            Показать View мгновенно.
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.UIElements.View.Hide">
+            <summary>
+            Скрыть View анимированно.
+            </summary>
+            <returns>
+            Возвращает ссылку на твин управляющий вызывавемой анимацией.
+            </returns>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.UIElements.View.HideImmediately">
+            <summary>
+            Скрыть View мгновенно.
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.UIElements.View.EnableAttention(System.Int32)">
+            <summary>
+            Включить Attention анимацию.
+            </summary>
+            <param name="count">
+            Количество повторений
+            </param>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.UIElements.View.DisableAttention">
+            <summary>
+            Отключить Attention анимацию.
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.UIElements.View.OnInit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.UIElements.View.OnShowStart(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="immediately"></param>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.UIElements.View.OnShowEnd(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="immediately"></param>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.UIElements.View.OnHideStart(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="immediately"></param>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.UIElements.View.OnHideEnd(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="immediately"></param>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.UIElements.View.OnDestroy">
+            <summary>
+            Ивент монобеха для очистки асинхронщины.
+            При оверрайде обязательно вызвать базу.
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.UIElements.View.FilterAnimators">
+            <summary>
+            Фильтр типов анимаций для отображения в инспекторе.
+            </summary>
+            <returns>
+            Возвращает коллекцию типов.
+            </returns>
+        </member>
+        <member name="T:FAwesome.ScenarioCore.UIFramework.Animator.Action.PunchScale">
+            <summary>
+            Анимирует панч скейла на устоновленный оффсет(punch) заданной View по параметрам.
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.Animator.Action.PunchScale.Animate(FAwesome.ScenarioCore.UIFramework.UIElements.View)">
+            <summary>
+            Выполняет анимацию по заданным параметрам.
+            </summary>
+            <param name="view">
+            View к которой применяется анимация.
+            </param>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.Animator.Action.PunchScale.AnimateImmediately(FAwesome.ScenarioCore.UIFramework.UIElements.View)">
+            <summary>
+            Выполняет анимацию по заданным параметрам мгновенно.
+            </summary>
+            <param name="view">
+            View к которой применяется анимация.
+            </param>
+        </member>
+        <member name="T:FAwesome.ScenarioCore.UIFramework.Animator.ViewAnimatorBase">
+            <summary>
+            Базовая абстрактная реализация аниматора.
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.Animator.ViewAnimatorBase.Animate(FAwesome.ScenarioCore.UIFramework.UIElements.View)">
+            <summary>
+            Выполняет анимацию по заданным параметрам.
+            </summary>
+            <param name="view">
+            View к которой применяется анимация.
+            </param>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.Animator.ViewAnimatorBase.AnimateImmediately(FAwesome.ScenarioCore.UIFramework.UIElements.View)">
+            <summary>
+            Выполняет анимацию по заданным параметрам мгновенно.
+            </summary>
+            <param name="view">
+            View к которой применяется анимация.
+            </param>
+        </member>
+        <member name="T:FAwesome.ScenarioCore.UIFramework.Animator.InOut.AnchorPosition">
+            <summary>
+            Анимирует перемещение относительно якорной позиции заданной View по параметрам.
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.Animator.InOut.AnchorPosition.Animate(FAwesome.ScenarioCore.UIFramework.UIElements.View)">
+            <summary>
+            Выполняет анимацию по заданным параметрам.
+            </summary>
+            <param name="view">
+            View к которой применяется анимация.
+            </param>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.Animator.InOut.AnchorPosition.AnimateImmediately(FAwesome.ScenarioCore.UIFramework.UIElements.View)">
+            <summary>
+            Выполняет анимацию по заданным параметрам мгновенно.
+            </summary>
+            <param name="view">
+            View к которой применяется анимация.
+            </param>
+        </member>
+        <member name="T:FAwesome.ScenarioCore.UIFramework.Animator.InOut.Scale">
+            <summary>
+            Анимирует скейл заданной View по параметрам.
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.Animator.InOut.Scale.Animate(FAwesome.ScenarioCore.UIFramework.UIElements.View)">
+            <summary>
+            Выполняет анимацию по заданным параметрам.
+            </summary>
+            <param name="view">
+            View к которой применяется анимация.
+            </param>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.Animator.InOut.Scale.AnimateImmediately(FAwesome.ScenarioCore.UIFramework.UIElements.View)">
+            <summary>
+            Выполняет анимацию по заданным параметрам мгновенно.
+            </summary>
+            <param name="view">
+            View к которой применяется анимация.
+            </param>
+        </member>
+        <member name="T:FAwesome.ScenarioCore.UIFramework.Animator.InOut.Fade">
+            <summary>
+            Анимирует альфу заданной View по параметрам.
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.Animator.InOut.Fade.Animate(FAwesome.ScenarioCore.UIFramework.UIElements.View)">
+            <summary>
+            Выполняет анимацию по заданным параметрам.
+            </summary>
+            <param name="view">
+            View к которой применяется анимация.
+            </param>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.Animator.InOut.Fade.AnimateImmediately(FAwesome.ScenarioCore.UIFramework.UIElements.View)">
+            <summary>
+            Выполняет анимацию по заданным параметрам мгновенно.
+            </summary>
+            <param name="view">
+            View к которой применяется анимация.
+            </param>
+        </member>
+        <member name="T:FAwesome.ScenarioCore.UIFramework.Animator.IViewAnimator">
+            <summary>
+            Интерфейс через который с аниматором работают View.
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.Animator.IViewAnimator.Animate(FAwesome.ScenarioCore.UIFramework.UIElements.View)">
+            <summary>
+            Выполняет анимацию по заданным параметрам.
+            </summary>
+            <param name="view">
+            View к которой применяется анимация.
+            </param>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.Animator.IViewAnimator.AnimateImmediately(FAwesome.ScenarioCore.UIFramework.UIElements.View)">
+            <summary>
+            Выполняет анимацию по заданным параметрам мгновенно.
+            </summary>
+            <param name="view">
+            View к которой применяется анимация.
+            </param>
         </member>
         <member name="T:FAwesome.ScenarioCore.UIFramework.UIScenario`1">
             <summary>
-            Внедрение в работу сценария интерфейса UI
+            Внедрение в работу сценария интерфейса UI.
             </summary>
             <typeparam name="B">
-            Тип шины (необходимо унаследовааться от UIBus)
+            Тип шины (необходимо унаследовааться от UIBus).
             </typeparam>
+        </member>
+        <member name="F:FAwesome.ScenarioCore.UIFramework.UIScenario`1.UI">
+            <summary>
+            Ссылка на менеджер интерфейса.
+            </summary>
+        </member>
+        <member name="F:FAwesome.ScenarioCore.UIFramework.UIScenario`1.Bus">
+            <summary>
+            Ссылка на шину интерфейса.
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.UIScenario`1.Prepare">
+            <summary>
+            Подготовка сценария и систем к работе.
+            </summary>
+        </member>
+        <member name="T:FAwesome.ScenarioCore.UIFramework.Bus.BusEvent`1">
+            <summary>
+            Обработчик событий для шины.
+            </summary>
+            <typeparam name="T">
+            Тип с которым работает ивент.
+            </typeparam>
+        </member>
+        <member name="E:FAwesome.ScenarioCore.UIFramework.Bus.BusEvent`1.E">
+            <summary>
+            Событие на которое можно подписаться.
+            </summary>
+        </member>
+        <member name="F:FAwesome.ScenarioCore.UIFramework.Bus.BusEvent`1.LastInvokeData">
+            <summary>
+            Последняя дата с которой инвокалось событие.
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.Bus.BusEvent`1.Invoke">
+            <summary>
+            Invoke события.
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.Bus.BusEvent`1.Invoke(`0)">
+            <summary>
+            Invoke события.
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.Bus.BusEvent`1.Awaiter(System.Threading.CancellationToken)">
+            <summary>
+            Ожидание первого после начала ожидания Invoke.
+            </summary>
+            <param name="token">
+            Токен для сопровождения эвейтера.
+            </param>
+        </member>
+        <member name="T:FAwesome.ScenarioCore.UIFramework.Bus.BusEvent`2">
+            <summary>
+            Обработчик событий для шины.
+            </summary>
+            <typeparam name="T">
+            Первый тип с которым работает ивент.
+            </typeparam>
+            <typeparam name="T1">
+            Второй тип с которым работает ивент.
+            </typeparam>
+        </member>
+        <member name="E:FAwesome.ScenarioCore.UIFramework.Bus.BusEvent`2.E">
+            <summary>
+            Событие на которое можно подписаться.
+            </summary>
+        </member>
+        <member name="F:FAwesome.ScenarioCore.UIFramework.Bus.BusEvent`2.LastInvokeData">
+            <summary>
+            Последняя первая дата с которой инвокалось событие.
+            </summary>
+        </member>
+        <member name="F:FAwesome.ScenarioCore.UIFramework.Bus.BusEvent`2.LastInvokeData1">
+            <summary>
+            Последняя вторая дата с которой инвокалось событие.
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.Bus.BusEvent`2.Invoke">
+            <summary>
+            Invoke события.
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.Bus.BusEvent`2.Invoke(`0,`1)">
+            <summary>
+            Invoke события.
+            </summary>
+            <param name="data"></param>
+            <param name="data1"></param>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.Bus.BusEvent`2.Awaiter(System.Threading.CancellationToken)">
+            <summary>
+            Ожидание первого после начала ожидания Invoke.
+            </summary>
+            <param name="token">
+            Токен для сопровождения эвейтера.
+            </param>
+        </member>
+        <member name="T:FAwesome.ScenarioCore.UIFramework.Bus.BusEvent`3">
+            <summary>
+            Обработчик событий для шины.
+            </summary>
+            <typeparam name="T">
+            Первый тип с которым работает ивент.
+            </typeparam>
+            <typeparam name="T1">
+            Второй тип с которым работает ивент.
+            </typeparam>
+            <typeparam name="T2">
+            Третий тип с которым работает ивент.
+            </typeparam>
+        </member>
+        <member name="E:FAwesome.ScenarioCore.UIFramework.Bus.BusEvent`3.E">
+            <summary>
+            Событие на которое можно подписаться.
+            </summary>
+        </member>
+        <member name="F:FAwesome.ScenarioCore.UIFramework.Bus.BusEvent`3.LastInvokeData">
+            <summary>
+            Последняя первая дата с которой инвокалось событие.
+            </summary>
+        </member>
+        <member name="F:FAwesome.ScenarioCore.UIFramework.Bus.BusEvent`3.LastInvokeData1">
+            <summary>
+            Последняя вторая дата с которой инвокалось событие.
+            </summary>
+        </member>
+        <member name="F:FAwesome.ScenarioCore.UIFramework.Bus.BusEvent`3.LastInvokeData2">
+            <summary>
+            Последняя третья дата с которой инвокалось событие.
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.Bus.BusEvent`3.Invoke">
+            <summary>
+            Invoke события.
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.Bus.BusEvent`3.Invoke(`0,`1,`2)">
+            <summary>
+            Invoke события.
+            </summary>
+            <param name="data"></param>
+            <param name="data1"></param>
+            <param name="data2"></param>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.Bus.BusEvent`3.Awaiter(System.Threading.CancellationToken)">
+            <summary>
+            Ожидание первого после начала ожидания Invoke.
+            </summary>
+            <param name="token">
+            Токен для сопровождения эвейтера.
+            </param>
         </member>
         <member name="T:FAwesome.ScenarioCore.UIFramework.Bus.UIBus">
             <summary>
             Ивентовая шина для отслеживаания игровых событий
             </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.Bus.UIBus.AddData(FAwesome.ScenarioCore.GameFramework.Data.IData)">
+            <summary>
+            Добавляет дату в шину, если такого типа даты еще нет.
+            </summary>
+            <param name="data">
+            Ссылка на дату
+            </param>
         </member>
         <member name="M:FAwesome.ScenarioCore.UIFramework.Bus.UIBus.Data``1">
             <summary>
@@ -84,6 +716,11 @@
             <returns>
             Возвращает объект даты либо нул
             </returns>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.UIFramework.Bus.UIBus.Init">
+            <summary>
+            Инициализация шины
+            </summary>
         </member>
     </members>
 </doc>
