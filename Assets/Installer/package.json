@@ -1,7 +1,7 @@
 ﻿{
   "name": "com.weackss.scenario-installer",
   "displayName": "Scenario.Installer",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "FAwesome Games scenario based game framework installer tool",
   "license": "Dolbaeb Intenational",
   "category": "Framework",
