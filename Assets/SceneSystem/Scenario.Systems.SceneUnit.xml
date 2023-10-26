@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Scenario.Systems.SceneUnit</name>
+    </assembly>
+    <members>
+        <member name="T:ScenarioCore.Systems.SceneSystemUnit.SceneSystem">
+            <summary>
+            Система управления сценами.
+            Загрузка и выгрузка сцен.
+            </summary>
+        </member>
+        <member name="M:ScenarioCore.Systems.SceneSystemUnit.SceneSystem.Init">
+            <summary>
+            Вызывается автоматически.
+            Точка входа для юзер кода.
+            </summary>
+        </member>
+        <member name="M:ScenarioCore.Systems.SceneSystemUnit.SceneSystem.Load(System.Int32,System.Threading.CancellationToken,System.Boolean,System.Action{System.Single})">
+            <summary>
+            Загрузка сцены.
+            </summary>
+            <param name="id">
+            Айди контейнера.
+            </param>
+            <param name="token">
+            Токен для контроля асинхронности.
+            </param>
+            <param name="isAdditive">
+            Аддитивно ли загрузить сцену.
+            </param>
+            <param name="OnProgress">
+            Событие для отслеживания прогресса 0.0f-1.0f.
+            </param>
+        </member>
+        <member name="M:ScenarioCore.Systems.SceneSystemUnit.SceneSystem.Load(System.Int32,System.Boolean,System.Action{System.Single})">
+            <summary>
+            Загрузка сцены.
+            </summary>
+            <param name="id">
+            Айди контейнера.
+            </param>
+            <param name="isAdditive">
+            Аддитивно ли загрузить сцену.
+            </param>
+            <param name="OnProgress">
+            Событие для отслеживания прогресса 0.0f-1.0f.
+            </param>
+        </member>
+        <member name="M:ScenarioCore.Systems.SceneSystemUnit.SceneSystem.Unload(System.Int32,System.Threading.CancellationToken,System.Action{System.Single})">
+            <summary>
+            Выгрузка сцены.
+            </summary>
+            <param name="id">
+            Айди контейнера.
+            </param>
+            <param name="token">
+            Токен для контроля асинхронности.
+            </param>
+            <param name="OnProgress">
+            Событие для отслеживания прогресса 0.0f-1.0f.
+            </param>
+        </member>
+        <member name="M:ScenarioCore.Systems.SceneSystemUnit.SceneSystem.Unload(System.Int32,System.Action{System.Single})">
+            <summary>
+            Выгрузка сцены.
+            </summary>
+            <param name="id">
+            Айди контейнера.
+            </param>
+            <param name="OnProgress">
+            Событие для отслеживания прогресса 0.0f-1.0f.
+            </param>
+        </member>
+        <member name="T:ScenarioCore.Systems.SceneSystemUnit.SceneSystemData">
+            <summary>
+            Скриптабл хранилище контейнеров сцен.
+            </summary>
+        </member>
+        <member name="F:ScenarioCore.Systems.SceneSystemUnit.SceneSystemData.Scenes">
+            <summary>
+            Коллекция контейнеров.
+            </summary>
+        </member>
+        <member name="F:ScenarioCore.Systems.SceneSystemUnit.SceneSystemData.fallBackScene">
+            <summary>
+            FallBack контейнер.
+            </summary>
+        </member>
+        <member name="M:ScenarioCore.Systems.SceneSystemUnit.SceneSystemData.GetScene(System.Int32)">
+            <summary>
+            Получить контейнер сцены из хранилища.
+            </summary>
+            <param name="ID">
+            Айди контейнера.
+            </param>
+            <returns>
+            Возвращает контейнер с нужным айди, либо fallBack контейнер.
+            </returns>
+        </member>
+        <member name="T:ScenarioCore.Systems.SceneSystemUnit.SceneContainer">
+            <summary>
+            Контейнер сцены.
+            </summary>
+        </member>
+        <member name="F:ScenarioCore.Systems.SceneSystemUnit.SceneContainer.ID">
+            <summary>
+            Айди контейнера.
+            </summary>
+        </member>
+        <member name="F:ScenarioCore.Systems.SceneSystemUnit.SceneContainer.Path">
+            <summary>
+            Путь к сцене.
+            </summary>
+        </member>
+    </members>
+</doc>

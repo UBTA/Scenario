@@ -1,7 +1,7 @@
 ﻿{
   "name": "com.weackss.scenario-scene-system",
-  "displayName": "Scenario.SceneSystem",
-  "version": "0.0.0",
+  "displayName": "Scenario.Systems.SceneUnit",
+  "version": "1.0.0",
   "description": "FAwesome Games scenario based SceneSystem",
   "license": "Dolbaeb Intenational",
   "category": "System",
