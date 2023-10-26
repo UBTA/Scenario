@@ -130,6 +130,58 @@
             Система выходит из рантайма.
             </summary>
         </member>
+        <member name="T:FAwesome.ScenarioCore.GameFramework.Systems.ISystem">
+            <summary>
+            Система работающая в связке со сценарием который управляет ее рантаймом.
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.GameFramework.Systems.ISystem.TryGetData(FAwesome.ScenarioCore.GameFramework.Data.IData@)">
+            <summary>
+            Система попытается вернуть свою дату.
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.GameFramework.Systems.ISystem.Prepare">
+            <summary>
+            Вызывается автоматически.
+            Система готовится к рантайму.
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.GameFramework.Systems.ISystem.Init">
+            <summary>
+            Вызывается автоматически.
+            Точка входа для юзер кода.
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.GameFramework.Systems.ISystem.Exit(System.Boolean)">
+            <summary>
+            Система выходит из рантайма.
+            </summary>
+        </member>
+        <member name="T:FAwesome.ScenarioCore.GameFramework.Systems.StaticSystemBase">
+            <summary>
+            Реализация базовой статик системы.
+            Предоставляет возможность вызовов в статику. 
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.GameFramework.Systems.StaticSystemBase.Prepare">
+            <summary>
+            Вызывается автоматически.
+            Система готовится к рантайму.
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.GameFramework.Systems.StaticSystemBase.Init">
+            <summary>
+            Вызывается автоматически.
+            Точка входа для юзер кода.
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.GameFramework.Systems.StaticSystemBase.Exit(System.Boolean)">
+            <summary>
+            Система выходит из рантайма.
+            </summary>
+        </member>
         <member name="T:FAwesome.ScenarioCore.GameFramework.Systems.SystemDated`1">
             <summary>
             Система работающяя с датой.
@@ -192,58 +244,6 @@
             Точка входа для юзер кода.
             </summary>
         </member>
-        <member name="T:FAwesome.ScenarioCore.GameFramework.Systems.ISystem">
-            <summary>
-            Система работающая в связке со сценарием который управляет ее рантаймом.
-            </summary>
-        </member>
-        <member name="M:FAwesome.ScenarioCore.GameFramework.Systems.ISystem.TryGetData(FAwesome.ScenarioCore.GameFramework.Data.IData@)">
-            <summary>
-            Система попытается вернуть свою дату.
-            </summary>
-            <param name="data"></param>
-            <returns></returns>
-        </member>
-        <member name="M:FAwesome.ScenarioCore.GameFramework.Systems.ISystem.Prepare">
-            <summary>
-            Вызывается автоматически.
-            Система готовится к рантайму.
-            </summary>
-        </member>
-        <member name="M:FAwesome.ScenarioCore.GameFramework.Systems.ISystem.Init">
-            <summary>
-            Вызывается автоматически.
-            Точка входа для юзер кода.
-            </summary>
-        </member>
-        <member name="M:FAwesome.ScenarioCore.GameFramework.Systems.ISystem.Exit(System.Boolean)">
-            <summary>
-            Система выходит из рантайма.
-            </summary>
-        </member>
-        <member name="T:FAwesome.ScenarioCore.GameFramework.Systems.StaticSystemBase">
-            <summary>
-            Реализация базовой статик системы.
-            Предоставляет возможность вызовов в статику. 
-            </summary>
-        </member>
-        <member name="M:FAwesome.ScenarioCore.GameFramework.Systems.StaticSystemBase.Prepare">
-            <summary>
-            Вызывается автоматически.
-            Система готовится к рантайму.
-            </summary>
-        </member>
-        <member name="M:FAwesome.ScenarioCore.GameFramework.Systems.StaticSystemBase.Init">
-            <summary>
-            Вызывается автоматически.
-            Точка входа для юзер кода.
-            </summary>
-        </member>
-        <member name="M:FAwesome.ScenarioCore.GameFramework.Systems.StaticSystemBase.Exit(System.Boolean)">
-            <summary>
-            Система выходит из рантайма.
-            </summary>
-        </member>
         <member name="T:FAwesome.ScenarioCore.GameFramework.Scenario">
             <summary>
             Инициализация систем в Start().
@@ -288,6 +288,21 @@
             Выход даты из рантайма.
             </summary>
         </member>
+        <member name="T:FAwesome.ScenarioCore.GameFramework.Data.DataClear">
+            <summary>
+            Чистая скриптабл дата без работы с префс.
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.GameFramework.Data.DataClear.Read">
+            <summary>
+            Подготовка даты к рантайму.
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.GameFramework.Data.DataClear.Write">
+            <summary>
+            Выход даты из рантайма.
+            </summary>
+        </member>
         <member name="T:FAwesome.ScenarioCore.GameFramework.Data.DataPrefs`1">
             <summary>
             Используй UseInspectorData для входа в рантайм с объектом типа P из инспектора.
@@ -311,21 +326,6 @@
             <summary>
             Выход даты из рантайма.
             Запись даты типа P в PlayerPrefs из рантайма.
-            </summary>
-        </member>
-        <member name="T:FAwesome.ScenarioCore.GameFramework.Data.DataClear">
-            <summary>
-            Чистая скриптабл дата без работы с префс.
-            </summary>
-        </member>
-        <member name="M:FAwesome.ScenarioCore.GameFramework.Data.DataClear.Read">
-            <summary>
-            Подготовка даты к рантайму.
-            </summary>
-        </member>
-        <member name="M:FAwesome.ScenarioCore.GameFramework.Data.DataClear.Write">
-            <summary>
-            Выход даты из рантайма.
             </summary>
         </member>
         <member name="T:FAwesome.ScenarioCore.GameFramework.Instance">
