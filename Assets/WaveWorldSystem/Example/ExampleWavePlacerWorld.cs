@@ -9,6 +9,10 @@ namespace FAwesome.ScenarioCore.Systems.WavePlacerSystemUnit.Example
     {
         [SerializeField] private List<ExamplePlaceContainer> places;
 
-        public List<ExamplePlaceContainer> Points => places;
+        public List<ExamplePlaceContainer> Points
+        {
+            get => places;
+            set => places = value;
+        }
     }
 }

@@ -1,8 +1,8 @@
 ﻿{
   "name": "com.weackss.scenario-waveworld-system",
   "displayName": "Scenario.WaveWorldSystem",
-  "version": "1.0.1",
-  "description": "v1.0.1 -Added example assets",
+  "version": "1.1.0",
+  "description": "v1.1.0 -Editor base realisation",
   "license": "Dolbaeb Intenational",
   "category": "System",
   "dependencies": {}

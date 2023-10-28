@@ -14,11 +14,39 @@ namespace FAwesome.ScenarioCore.Systems.WavePlacerSystemUnit.Example
         [SerializeField] private Vector3 spawnRotation;
         [SerializeField] private Vector3 spawnScale;
 
+        [SerializeField] private string additionalValue;
+        
+        public string AdditionalValue
+        {
+            get => additionalValue;
+            set => additionalValue = value;
+        }
+        
+        public int TypeID
+        {
+            get => Type;
+            set => Type = value;
+        }
 
-        public int TypeID => Type;
-        public int Wave => WaveID;
-        public Vector3 SpawnPoint => spawnPoint;
-        public Vector3 SpawnRotation => spawnRotation;
-        public Vector3 SpawnScale => spawnScale;
+        public int Wave
+        {
+            get => WaveID;
+            set => WaveID = value;
+        }
+        public Vector3 SpawnPoint
+        {
+            get => spawnPoint;
+            set => spawnPoint = value;
+        }
+        public Vector3 SpawnRotation
+        {
+            get => spawnRotation;
+            set => spawnRotation = value;
+        }
+        public Vector3 SpawnScale
+        {
+            get => spawnScale;
+            set => spawnScale = value;
+        }
     }
 }

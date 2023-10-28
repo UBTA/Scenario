@@ -8,11 +8,20 @@ namespace FAwesome.ScenarioCore.Systems.WavePlacerSystemUnit.Example
     {
         [SerializeField] private int Type;
         
-        private int wave;
+        [SerializeField] private int wave;
+
+        [SerializeField] private string additionalValue;
+        
         public int WaveID
         {
             get => wave;
             set => wave = value;
+        }
+        
+        public string AdditionalValue
+        {
+            get => additionalValue;
+            set => additionalValue = value;
         }
 
         public int GetTypeID => Type;
