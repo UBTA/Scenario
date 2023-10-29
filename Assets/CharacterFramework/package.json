@@ -1,8 +1,8 @@
 ﻿{
   "name": "com.weackss.scenario-character-framework",
   "displayName": "Scenario.CharacterFramework",
-  "version": "1.0.0",
-  "description": "FAwesome Games scenario based character framework",
+  "version": "1.0.1",
+  "description": "v1.0.1 - Movable base for character",
   "license": "Dolbaeb Intenational",
   "category": "Framework",
   "dependencies": {}
