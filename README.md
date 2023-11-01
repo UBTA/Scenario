@@ -10,4 +10,4 @@
 ***Includes external dependencies into Odin, DoTween, UniTask***
 
 >Developers
-* `UBTA (Weackss)`
+* `UBTA` ([Weackss](https://github.com/UBTA))
