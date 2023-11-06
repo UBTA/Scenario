@@ -1,7 +1,7 @@
 using System;
 using FAwesome.ScenarioCore.CharacterFramework.Modules.Animatable;
 
-namespace FAwesome.ScenarioCore.CharacterFramework
+namespace FAwesome.ScenarioCore.CharacterFramework.Example
 {
     [Serializable]
     public class JumpOverStateExample : AnimatorState
