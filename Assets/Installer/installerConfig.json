@@ -38,7 +38,7 @@
       "Description":"",
       "Link":"https://github.com/UBTA/ScenarioFramework.git?path=Assets/UtilsFramework",
       "Tag":"#utils-", 
-      "AvailableVersions":["v1.1.0","v1.1.1","v1.1.2","v1.1.3"],
+      "AvailableVersions":["v1.1.3"],
       "isInstalled":false
     },
     {
@@ -48,7 +48,7 @@
       "Description":"",
       "Link":"https://github.com/UBTA/ScenarioFramework.git?path=Assets/CharacterFramework",
       "Tag":"#scch-",
-      "AvailableVersions":["v1.0.1","v1.1.0","v1.1.1","v1.1.2","v1.1.3","v1.1.4","v1.1.5"],
+      "AvailableVersions":["v1.1.5"],
       "isInstalled":false
     },
     {
@@ -58,7 +58,7 @@
       "Description":"",
       "Link":"https://github.com/UBTA/ScenarioFramework.git?path=Assets/SceneSystem",
       "Tag":"#scsys-",
-      "AvailableVersions":["v1.0.0","v1.0.1"],
+      "AvailableVersions":["v1.0.1"],
       "isInstalled":false
     },
     {
@@ -68,7 +68,7 @@
       "Description":"",
       "Link":"https://github.com/UBTA/ScenarioFramework.git?path=Assets/WaveWorldSystem",
       "Tag":"#wpsys-",
-      "AvailableVersions":["v1.0.0","v1.0.1","v1.1.0"],
+      "AvailableVersions":["v1.1.0"],
       "isInstalled":false
     }
   ]
