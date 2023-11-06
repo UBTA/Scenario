@@ -6,18 +6,11 @@ namespace FAwesome.ScenarioCore.CharacterFramework.Example
 {
     public class CharacterUsabilityExample : MonoBehaviour
     {
-        [SerializeField] private BehaviourTree tree;
         [SerializeField] private Character character;
 
         public void Awake()
         {
             character.Init();
-        }
-
-        [Button]
-        public void UseTree()
-        {
-            character.Behave(tree);
         }
 
         [Button]
