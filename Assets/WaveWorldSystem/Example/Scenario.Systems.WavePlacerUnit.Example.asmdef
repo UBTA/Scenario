@@ -1,0 +1,14 @@
+﻿{
+  "name": "Scenario.Systems.WavePlacerUnit.Example",
+  "rootNamespace": "FAwesome.ScenarioCore.Systems.WavePlacerSystemUnit.Example",
+  "references": [],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

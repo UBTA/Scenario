@@ -4,6 +4,218 @@
         <name>Scenario.Systems.WavePlacerUnit</name>
     </assembly>
     <members>
+        <member name="T:FAwesome.ScenarioCore.Systems.WavePlacerSystemUnit.IWavePlacerWorldFiller`4">
+            <summary>
+            Эдитор монобех для удобного фила миров волн.
+            </summary>
+            <typeparam name="WI">
+            Инстанс мира волн
+            </typeparam>
+            <typeparam name="I">
+            Инстанс размещаемой сущности
+            </typeparam>
+            <typeparam name="D">
+            Скриптабл дата системы.
+            </typeparam>
+            <typeparam name="P">
+            Контейнер точки в мире
+            </typeparam>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.Systems.WavePlacerSystemUnit.IWavePlacerWorldFiller`4.Create">
+            <summary>
+            Создание мира в инспеторе.
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.Systems.WavePlacerSystemUnit.IWavePlacerWorldFiller`4.Add(`3)">
+            <summary>
+            Добавление в мир новой сущности.
+            </summary>
+            <param name="point"></param>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.Systems.WavePlacerSystemUnit.IWavePlacerWorldFiller`4.End">
+            <summary>
+            Сохранение эдитор мира в мир волн
+            </summary>
+        </member>
+        <member name="T:FAwesome.ScenarioCore.Systems.WavePlacerSystemUnit.WavePlacerFillerBase`4">
+            <summary>
+            Эдитор монобех для удобного фила миров волн.
+            </summary>
+            <typeparam name="WI">
+            Инстанс мира волн
+            </typeparam>
+            <typeparam name="I">
+            Инстанс размещаемой сущности
+            </typeparam>
+            <typeparam name="D">
+            Скриптабл дата системы.
+            </typeparam>
+            <typeparam name="P">
+            Контейнер точки в мире
+            </typeparam>
+        </member>
+        <member name="F:FAwesome.ScenarioCore.Systems.WavePlacerSystemUnit.WavePlacerFillerBase`4.Data">
+            <summary>
+            Дата в которой хранятся сущности мира волн.
+            </summary>
+        </member>
+        <member name="F:FAwesome.ScenarioCore.Systems.WavePlacerSystemUnit.WavePlacerFillerBase`4.World">
+            <summary>
+            Префаб мира волн
+            </summary>
+        </member>
+        <member name="F:FAwesome.ScenarioCore.Systems.WavePlacerSystemUnit.WavePlacerFillerBase`4.EditorInstances">
+            <summary>
+            Сущности созданные в эдиторе.
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.Systems.WavePlacerSystemUnit.WavePlacerFillerBase`4.Create">
+            <summary>
+            Создание мира в инспеторе.
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.Systems.WavePlacerSystemUnit.WavePlacerFillerBase`4.Add(`3)">
+            <summary>
+            Добавление в мир новой сущности.
+            </summary>
+            <param name="point"></param>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.Systems.WavePlacerSystemUnit.WavePlacerFillerBase`4.SetAdditionalValues(`1,`3)">
+            <summary>
+            Устанавливает доп параметры из точки в инстанс.
+            </summary>
+            <param name="instance"></param>
+            <param name="place"></param>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.Systems.WavePlacerSystemUnit.WavePlacerFillerBase`4.GetAdditionalValues(`1,`3)">
+            <summary>
+            Устанавливает доп параметры из инстанса в точку
+            </summary>
+            <param name="instance"></param>
+            <param name="place"></param>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.Systems.WavePlacerSystemUnit.WavePlacerFillerBase`4.End">
+            <summary>
+            Сохранение эдитор мира в мир волн
+            </summary>
+        </member>
+        <member name="T:FAwesome.ScenarioCore.Systems.WavePlacerSystemUnit.Interfaces.IPlaceContainer">
+            <summary>
+            Контейнер для информации о точке в мире волн.
+            </summary>
+        </member>
+        <member name="P:FAwesome.ScenarioCore.Systems.WavePlacerSystemUnit.Interfaces.IPlaceContainer.TypeID">
+            <summary>
+            Тип сущности.
+            </summary>
+        </member>
+        <member name="P:FAwesome.ScenarioCore.Systems.WavePlacerSystemUnit.Interfaces.IPlaceContainer.Wave">
+            <summary>
+            Волна на которой сущность активируется.
+            </summary>
+        </member>
+        <member name="T:FAwesome.ScenarioCore.Systems.WavePlacerSystemUnit.Interfaces.IWavePlacerInstance">
+            <summary>
+            Интерфейс для сущности мира ворн.
+            </summary>
+        </member>
+        <member name="P:FAwesome.ScenarioCore.Systems.WavePlacerSystemUnit.Interfaces.IWavePlacerInstance.WaveID">
+            <summary>
+            Волна на которой сущность активируется.
+            </summary>
+        </member>
+        <member name="P:FAwesome.ScenarioCore.Systems.WavePlacerSystemUnit.Interfaces.IWavePlacerInstance.GetTypeID">
+            <summary>
+            Тип сущности.
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.Systems.WavePlacerSystemUnit.Interfaces.IWavePlacerInstance.Prepare">
+            <summary>
+            Подготовка сущности к активации.
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.Systems.WavePlacerSystemUnit.Interfaces.IWavePlacerInstance.Activate">
+            <summary>
+            Активация сущности.
+            </summary>
+        </member>
+        <member name="T:FAwesome.ScenarioCore.Systems.WavePlacerSystemUnit.Interfaces.IWavePlacerWorld`1">
+            <summary>
+            Интерфейс для реализации мира волн.
+            </summary>
+            <typeparam name="P"></typeparam>
+        </member>
+        <member name="P:FAwesome.ScenarioCore.Systems.WavePlacerSystemUnit.Interfaces.IWavePlacerWorld`1.Points">
+            <summary>
+            Набор контейнеров точек мира.
+            </summary>
+        </member>
+        <member name="T:FAwesome.ScenarioCore.Systems.WavePlacerSystemUnit.WavePlacerSystem`4">
+            <summary>
+            Система обслуживающая работу мира волн.
+            </summary>
+            <typeparam name="WI">
+            Инстанс мира волн
+            </typeparam>
+            <typeparam name="I">
+            Инстанс размещаемой сущности
+            </typeparam>
+            <typeparam name="D">
+            Скриптабл дата системы.
+            </typeparam>
+            <typeparam name="P">
+            Контейнер точки в мире
+            </typeparam>
+        </member>
+        <member name="F:FAwesome.ScenarioCore.Systems.WavePlacerSystemUnit.WavePlacerSystem`4.instances">
+            <summary>
+            Пул для инстансов.
+            </summary>
+        </member>
+        <member name="F:FAwesome.ScenarioCore.Systems.WavePlacerSystemUnit.WavePlacerSystem`4.world">
+            <summary>
+            Пул для миров.
+            </summary>
+        </member>
+        <member name="F:FAwesome.ScenarioCore.Systems.WavePlacerSystemUnit.WavePlacerSystem`4.preparedWave">
+            <summary>
+            Последние подготовленные сущности.
+            </summary>
+        </member>
+        <member name="F:FAwesome.ScenarioCore.Systems.WavePlacerSystemUnit.WavePlacerSystem`4.activeWave">
+            <summary>
+            Последние активные сущности.
+            </summary>
+        </member>
+        <member name="F:FAwesome.ScenarioCore.Systems.WavePlacerSystemUnit.WavePlacerSystem`4.waveIndex">
+            <summary>
+            Индекс волны.
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.Systems.WavePlacerSystemUnit.WavePlacerSystem`4.CreateWorld(System.Action{`1,`3})">
+            <summary>
+            Создать мир.
+            </summary>
+            <param name="OnPoint">
+            Событие для отслеживания создания каждой точки в мире.
+            </param>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.Systems.WavePlacerSystemUnit.WavePlacerSystem`4.PrepareWave">
+            <summary>
+            Подготовка мира волн к активации.
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.Systems.WavePlacerSystemUnit.WavePlacerSystem`4.ActivateWave">
+            <summary>
+            Активация мира волн.
+            </summary>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.Systems.WavePlacerSystemUnit.WavePlacerSystem`4.Exit(System.Boolean)">
+            <summary>
+            Выход мира волн из рантайма.
+            </summary>
+            <param name="saveData"></param>
+        </member>
         <member name="T:FAwesome.ScenarioCore.Systems.WavePlacerSystemUnit.Data.WavePlacerData`3">
             <summary>
             Скриптабл дата для системы волн
