@@ -1,8 +1,8 @@
-﻿{
+{
   "name": "com.weackss.utils-framework",
   "displayName": "UtilsFramework",
-  "version": "1.0.0",
-  "description": "FAwesome Games utils framework",
+  "version": "1.1.3",
+  "description": "v1.1.3 - Quaternion cutters",
   "license": "Dolbaeb Intenational",
   "category": "Framework",
   "dependencies": {}
