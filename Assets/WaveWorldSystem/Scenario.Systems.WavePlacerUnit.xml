@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Scenario.Systems.WavePlacerUnit</name>
+    </assembly>
+    <members>
+        <member name="T:FAwesome.ScenarioCore.Systems.WavePlacerSystemUnit.Data.WavePlacerData`3">
+            <summary>
+            Скриптабл дата для системы волн
+            </summary>
+            <typeparam name="WI">
+            Инстанс мира волн
+            </typeparam>
+            <typeparam name="P">
+            Контейнер точки в мире
+            </typeparam>
+            <typeparam name="I">
+            Инстанс размещаемой сущности
+            </typeparam>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.Systems.WavePlacerSystemUnit.Data.WavePlacerData`3.GetInstance(System.Int32)">
+            <summary>
+            Получение размещаемой сущности
+            </summary>
+            <param name="typeID">
+            Айди сущности
+            </param>
+            <returns>
+            Возвращает вариант сущности
+            </returns>
+        </member>
+        <member name="M:FAwesome.ScenarioCore.Systems.WavePlacerSystemUnit.Data.WavePlacerData`3.GetWorld">
+            <summary>
+            Поулчение сущности мира волн
+            </summary>
+        </member>
+    </members>
+</doc>
