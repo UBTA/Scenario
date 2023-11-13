@@ -1,8 +1,8 @@
 ﻿{
   "name": "com.weackss.scenario-character-framework",
   "displayName": "Scenario.CharacterFramework",
-  "version": "1.1.5",
-  "description": "v1.1.5 - Behaviour, animator",
+  "version": "1.1.6",
+  "description": "v1.1.6 - Rules, BaseIK",
   "license": "Dolbaeb Intenational",
   "category": "Framework",
   "dependencies": {}
