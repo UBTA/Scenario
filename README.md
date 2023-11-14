@@ -15,6 +15,4 @@
 
 Scripting API / Documentation
 
-* [`Scenario.GameFramework`](Assets/GameFramework/Scenario.GameFramework.md)
-* [`Scenario.UIFramework`](Assets/UIFramework/Scenario.UIFramework.md)
 * [`Scenario.CharacterFramework`](Assets/CharacterFramework/Scenario.CharacterFramework.md)
