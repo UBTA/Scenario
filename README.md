@@ -15,58 +15,8 @@
 
 Scripting API / Documentation
 
-[Contribution guidelines for this project](README.md)
-
----
-Scenario.GameFramework
-
-Scenario
-
-Instance
-
-Workers
-
-Datas
-
-Systems
-
----
-Scenario.UIFramework
-
-Scenario Integration
-
-Bus
-
-View
-
-Animator
-
-Screen
-
----
-Scenario.CharacterFramework
-
-Character
-
-Puppet
-
-Modules
-
-Behaviours
-
-Rules
-
----
-Scenario.Systems.SceneSystem
-
-System
-
-Data
-
----
-Scenario.Systems.WavePlacerSystem
-
-System
-
-Data
-
+* [`Scenario.GameFramework`](docs/Scenario.GameFramework.md)
+* [`Scenario.UIFramework`](docs/Scenario.UIFramework.md)
+* [`Scenario.CharacterFramework`](docs/Scenario.CharacterFramework.md)
+* [`Scenario.Systems.SceneSystem`](docs/Scenario.Systems.SceneSystem.md)
+* [`Scenario.Systems.WavePlacerSystem`](docs/Scenario.Systems.WavePlacerSystem.md)
