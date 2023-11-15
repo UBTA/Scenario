@@ -93,10 +93,10 @@ Package have basic realisations of `IAnimatable` is abstract mono `AnimatableMod
 > [!NOTE]
 > `SimpleHumanoidAnimatable` also can use `IMovable` to get real instance velocity and animate it from animator tree. `IAnimatable` in that case should be after `IMovable` in hierarhy to proper `IFixed` sequence calls.
 
-## Puppet
+# Puppet
 
-## Behaviours
+# Behaviours
 
-## Rules
+# Rules
 
-## Character
+# Character
