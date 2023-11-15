@@ -109,7 +109,7 @@ Package have basic realisations of `IAnimatable` is abstract mono `AnimatableMod
   }
 ```
 
-Interface `IHittable` declares hit cathing possibility for characters.
+Interface `IHittable` declares hit catching possibility for characters.
 Module uses `PhysActivator` to catch external hits via calling `RegisterHit()` for collisions.
 
 ```cs
