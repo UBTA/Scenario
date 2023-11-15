@@ -167,7 +167,7 @@ Methods `Hold()` and `Drop()` used to grab `IHolderItem` and determing how chara
   }
 ```
 
-Interface `IIKLook` allows Custom look of characters. Its simply uses Rigging constraints to procedural looking to the targets.
+Interface `IIKLook` allows usement of procedural look for characters. It's simply uses Rigging constraints for looking and following the targets.
 
 > [!NOTE]
 >Module works with `LookConstraint`, which should have full setup in editor includig `sourceObjects[0]`.
