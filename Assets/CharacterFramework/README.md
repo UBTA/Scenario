@@ -133,7 +133,7 @@ Package have basic realisations of `IHittable` is abstract mono `HittableModuleB
 ## `IIKHolder`
 
 > [!WARNING]
-> `IHittable` module uses Unity Technologies `Animation Rigging` asset. You can install it vie `Package Manager`.
+> `IIKHolder` module uses Unity Technologies `Animation Rigging` asset. You can install it vie `Package Manager`.
 
 ```cs
   public interface IIKHolder : ICharacterModule, ILate
@@ -157,7 +157,20 @@ Methods `Hold()` and `Drop()` used to grab `IHolderItem` and determing how chara
 ## `IIKLook`
 
 > [!WARNING]
-> `IHittable` module uses Unity Technologies `Animation Rigging` asset. You can install it vie `Package Manager`.
+> `IIKLook` module uses Unity Technologies `Animation Rigging` asset. You can install it vie `Package Manager`.
+
+```cs
+  public interface IIKLook : ICharacterModule, ILate
+  {
+    public void Look(Transform target);
+    public void Look(Vector3? point);
+  }
+```
+
+Interface `IIKLook` allows Custom look of characters. Its simply uses Rigging constraints to procedural looking to the targets.
+
+> [!NOTE]
+>Module works with `LookConstraint`, which should have full setup in editor includig `sourceObjects[0]`.
 
 # Puppet
 
