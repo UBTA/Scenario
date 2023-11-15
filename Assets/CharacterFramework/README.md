@@ -93,6 +93,48 @@ Package have basic realisations of `IAnimatable` is abstract mono `AnimatableMod
 > [!NOTE]
 > `SimpleHumanoidAnimatable` also can use `IMovable` to get real instance velocity and animate it from animator tree. `IAnimatable` in that case should be after `IMovable` in hierarhy to proper `IFixed` sequence calls.
 
+---
+## `IHittable`
+
+```cs
+  public interface IHittable : ICharacterModule
+  {
+    public event Action<Hit> OnHit;    
+    public void ForceHit(Vector3? source = null);
+  }
+```
+
+Interface `IHittable` declares hit cathing possibility for characters.
+Module uses `PhysActivator` to catch external hits via calling `RegisterHit()` for collisions.
+
+```cs
+  public class PhysActivator : MonoBehaviour
+  {
+    public event Action<Hit> OnHit;    
+    public Collider Col;
+    public Rigidbody RB;
+    public string Part;
+    public bool Kinematiс { set; }
+
+    public void RegisterHit(Vector3 pos, Vector3 dir);
+  }
+```
+
+> [!NOTE]
+> Use `PhysActivator.Part` to determine and filter activators, for example to split activators into bodypars hands, legs, chest etc.
+
+In `OnHit` used for transfer hit data through hittable module, data contains properties for let module know where in which direction and what Activator was hitted.
+Package have basic realisations of `IHittable` is abstract mono `HittableModuleBase` and its inheritors `DestructHittable`, `RagDollHittable`.
+
+> [!NOTE]
+> `HittableModuleBase` serializes `fallBack` property of type `PhysActivator`, thats used for to determine `ForceHit()` physic impacts.
+
+---
+## `IIKHolder`
+
+---
+## `IIKLook`
+
 # Puppet
 
 # Behaviours
