@@ -132,8 +132,32 @@ Package have basic realisations of `IHittable` is abstract mono `HittableModuleB
 ---
 ## `IIKHolder`
 
+> [!WARNING]
+> `IHittable` module uses Unity Technologies `Animation Rigging` asset. You can install it vie `Package Manager`.
+
+```cs
+  public interface IIKHolder : ICharacterModule, ILate
+  {
+    public Grab Left { get; }
+    public Grab Right { get; }
+    public Grab TwoHand { get; }
+
+    public void Hold(IHolderItem item, bool left = true, bool right = true);
+    public void Drop(bool left = true, bool right = true);
+  }
+```
+
+Interface `IIKHolder` declares possibility of holding items for characters. Its uses `Grab` for setting and parenting gameObjects into character.
+Methods `Hold()` and `Drop()` used to grab `IHolderItem` and determing how character should hold this item in hands.
+
+> [!NOTE]
+>`Grab` contains propertioes for rooting items into Rig `root` with Vector3 `offset` and `angles` declared in editor vie Inspector or runtime via `ApplyGrab()` which applays current `offset` and `angles` to item.
+
 ---
 ## `IIKLook`
+
+> [!WARNING]
+> `IHittable` module uses Unity Technologies `Animation Rigging` asset. You can install it vie `Package Manager`.
 
 # Puppet
 
