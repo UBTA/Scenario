@@ -15,4 +15,4 @@
 
 Scripting API / Documentation
 
-* [`Scenario.CharacterFramework`](Assets/CharacterFramework/Scenario.CharacterFramework.md)
+* [`Scenario.CharacterFramework`](Assets/CharacterFramework/README.md)
