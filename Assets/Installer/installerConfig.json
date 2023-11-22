@@ -12,8 +12,8 @@
       "isInstalled":false
     },
     {
-      "DisplayName":"GameFramework",
-      "Name":"com.weackss.scenario-game-framework",
+      "DisplayName":"Game-Framework",
+      "Name":"com.weackss.scenario.frames.game",
       "Version":"",
       "Description":"",
       "Link":"https://github.com/UBTA/ScenarioFramework.git?path=Assets/GameFramework",
