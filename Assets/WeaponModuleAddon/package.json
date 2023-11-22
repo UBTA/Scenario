@@ -1,9 +1,9 @@
 ﻿{
-  "name": "com.weackss.scenario.addons.weapons-module",
-  "displayName": "Scenario.WeaponsModule",
-  "version": "1.0.0",
-  "description": "v1.0.0",
+  "name": "com.weackss.scenario.addons.weapon-module",
+  "displayName": "Scenario.Addons.WeaponModule",
+  "version": "1.02.0",
+  "description": "v1.2.0 - Soft launch",
   "license": "Dolbaeb Intenational",
-  "category": "System",
+  "category": "Addon",
   "dependencies": {}
 }

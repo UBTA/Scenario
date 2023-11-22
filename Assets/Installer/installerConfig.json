@@ -72,8 +72,8 @@
       "isInstalled":false
     },
     {
-      "DisplayName":"WeaponsModule",
-      "Name":"com.weackss.scenario.addons.weapons-module",
+      "DisplayName":"WeaponModule-Addon",
+      "Name":"com.weackss.scenario.addons.weapon-module",
       "Version":"",
       "Description":"",
       "Link":"https://github.com/UBTA/ScenarioFramework.git?path=Assets/WeaponModuleAddon",
