@@ -42,8 +42,8 @@
       "isInstalled":false
     },
     {
-      "DisplayName":"CharacterFramework",
-      "Name":"com.weackss.scenario-character-framework",
+      "DisplayName":"Character-Framework",
+      "Name":"com.weackss.scenario.frames.character",
       "Version":"",
       "Description":"",
       "Link":"https://github.com/UBTA/ScenarioFramework.git?path=Assets/CharacterFramework",
