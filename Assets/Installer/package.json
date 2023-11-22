@@ -1,5 +1,5 @@
 ﻿{
-  "name": "com.weackss.scenario-installer",
+  "name": "com.weackss.scenario.installer",
   "displayName": "Scenario.Installer",
   "version": "1.2.0",
   "description": "Installer tool for scenario framework.",

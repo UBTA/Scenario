@@ -32,8 +32,8 @@
       "isInstalled":false
     },
     {
-      "DisplayName":"UtilsFramework",
-      "Name":"com.weackss.utils-framework",
+      "DisplayName":"Utils-Framework",
+      "Name":"com.weackss.scenario.frames.utils",
       "Version":"",
       "Description":"",
       "Link":"https://github.com/UBTA/ScenarioFramework.git?path=Assets/UtilsFramework",
