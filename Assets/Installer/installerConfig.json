@@ -23,7 +23,7 @@
     },
     {
       "DisplayName":"UIFramework",
-      "Name":"com.weackss.scenario-ui-framework",
+      "Name":"com.weackss.scenario.frames.ui",
       "Version":"",
       "Description":"",
       "Link":"https://github.com/UBTA/ScenarioFramework.git?path=Assets/UIFramework",

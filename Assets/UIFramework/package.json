@@ -1,8 +1,8 @@
 {
-  "name": "com.weackss.scenario-ui-framework",
-  "displayName": "Scenario.UIFramework",
-  "version": "1.1.0",
-  "description": "FAwesome Games scenario based ui framework",
+  "name": "com.weackss.scenario.frames.ui",
+  "displayName": "Scenario.Framework.UI",
+  "version": "1.2.0",
+  "description": "v1.2.0 - Soft launch",
   "license": "Dolbaeb Intenational",
   "category": "Framework",
   "dependencies": {}
