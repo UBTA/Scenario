@@ -52,8 +52,8 @@
       "isInstalled":false
     },
     {
-      "DisplayName":"SceneUnit",
-      "Name":"com.weackss.scenario-scene-system",
+      "DisplayName":"Scene-System",
+      "Name":"com.weackss.scenario.systems.scene",
       "Version":"",
       "Description":"",
       "Link":"https://github.com/UBTA/ScenarioFramework.git?path=Assets/SceneSystem",
