@@ -70,6 +70,16 @@
       "Tag":"",
       "AvailableVersions":[""],
       "isInstalled":false
+    },
+    {
+      "DisplayName":"WeaponsModule",
+      "Name":"com.weackss.scenario.addons.weapons-module",
+      "Version":"",
+      "Description":"",
+      "Link":"https://github.com/UBTA/ScenarioFramework.git?path=Assets/WeaponModuleAddon",
+      "Tag":"",
+      "AvailableVersions":[""],
+      "isInstalled":false
     }
   ]
 }
