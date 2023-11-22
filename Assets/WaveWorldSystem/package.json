@@ -1,8 +1,8 @@
 ﻿{
-  "name": "com.weackss.scenario-waveworld-system",
-  "displayName": "Scenario.WaveWorldSystem",
-  "version": "1.1.0",
-  "description": "v1.1.0 -Editor base realisation",
+  "name": "com.weackss.scenario.systems.wave-placer",
+  "displayName": "Scenario.Systems.WavePlacerUnit",
+  "version": "1.2.0",
+  "description": "v1.2.0 - Soft launch",
   "license": "Dolbaeb Intenational",
   "category": "System",
   "dependencies": {}
