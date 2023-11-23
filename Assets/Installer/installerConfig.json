@@ -72,6 +72,16 @@
       "isInstalled":false
     },
     {
+      "DisplayName":"Bullet-System",
+      "Name":"com.weackss.scenario.systems.bullet",
+      "Version":"",
+      "Description":"",
+      "Link":"https://github.com/UBTA/ScenarioFramework.git?path=Assets/BulletSystem",
+      "Tag":"",
+      "AvailableVersions":[""],
+      "isInstalled":false
+    },
+    {
       "DisplayName":"WeaponModule-Addon",
       "Name":"com.weackss.scenario.addons.weapon-module",
       "Version":"",

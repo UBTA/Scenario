@@ -1,0 +1,9 @@
+﻿{
+  "name": "com.weackss.scenario.systems.bullet",
+  "displayName": "Scenario.Systems.BulletUnit",
+  "version": "1.0.0",
+  "description": "v1.0.0 - Soft launch",
+  "license": "Dolbaeb Intenational",
+  "category": "System",
+  "dependencies": {}
+}
