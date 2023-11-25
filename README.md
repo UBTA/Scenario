@@ -13,4 +13,5 @@
 
 Scripting API / Documentation
 
+* [`Scenario.GameFramework`](Assets/GameFramework/README.md)
 * [`Scenario.CharacterFramework`](Assets/CharacterFramework/README.md)
