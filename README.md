@@ -5,6 +5,8 @@
 
 >Create issues with framework [Git](https://github.com/UBTA/ScenarioFramework/issues)
 
+>Keep track of updates in [Telegram](https://t.me/AveragePetEnjoyers)
+
 ***Includes external dependencies into Odin, DoTween, UniTask***
 
 >Developers
