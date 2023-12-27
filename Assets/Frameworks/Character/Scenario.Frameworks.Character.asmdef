@@ -1,0 +1,19 @@
+{
+    "name": "Scenario.Frameworks.Character",
+    "rootNamespace": "EblanDev.ScenarioCore.CharacterFramework",
+    "references": [
+        "Scenario.Frameworks.Utils",
+        "Scenario.Frameworks.Game",
+        "UniTask",
+        "Unity.Animation.Rigging"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

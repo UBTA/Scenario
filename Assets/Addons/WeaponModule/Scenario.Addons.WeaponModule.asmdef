@@ -1,0 +1,17 @@
+{
+    "name": "Scenario.Addons.WeaponModule",
+    "rootNamespace": "EblanDev.ScenarioCore.WeaponModule",
+    "references": [
+        "Scenario.Frameworks.Character",
+        "UniTask"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,16 @@
+{
+    "name": "Scenario.Systems.WavePlacerUnit",
+    "rootNamespace": "EblanDev.ScenarioCore.Systems.WavePlacerSystemUnit",
+    "references": [
+        "Scenario.Frameworks.Game"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

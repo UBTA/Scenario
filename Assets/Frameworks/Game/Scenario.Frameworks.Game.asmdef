@@ -1,0 +1,14 @@
+{
+    "name": "Scenario.Frameworks.Game",
+    "rootNamespace": "EblanDev.ScenarioCore.GameFramework",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

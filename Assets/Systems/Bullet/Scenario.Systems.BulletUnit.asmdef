@@ -1,0 +1,17 @@
+﻿{
+  "name": "Scenario.Systems.BulletUnit",
+  "rootNamespace": "EblanDev.ScenarioCore.Systems.BulletSystemUnit",
+  "references": [
+    "Scenario.Frameworks.Game",
+    "Scenario.Frameworks.Character"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

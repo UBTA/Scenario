@@ -1,9 +1,0 @@
-﻿{
-  "name": "com.weackss.scenario.systems.scene",
-  "displayName": "Scenario.Systems.SceneUnit",
-  "version": "1.2.1",
-  "description": "v1.2.1 - Soft launch",
-  "license": "Dolbaeb Intenational",
-  "category": "System",
-  "dependencies": {}
-}

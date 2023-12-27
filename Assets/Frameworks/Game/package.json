@@ -1,0 +1,9 @@
+﻿{
+  "name": "com.weackss.scenario.frameworks.game",
+  "displayName": "Scenario.Frameworks.Game",
+  "version": "1.2.2",
+  "description": "v1.2.2 - Removed dll's approach",
+  "license": "Dolbaeb Intenational",
+  "category": "Framework",
+  "dependencies": {}
+}

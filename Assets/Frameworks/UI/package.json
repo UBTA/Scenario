@@ -1,0 +1,9 @@
+{
+  "name": "com.weackss.scenario.frameworks.ui",
+  "displayName": "Scenario.Frameworks.UI",
+  "version": "1.2.2",
+  "description": "v1.2.2 - Removed dll's approach",
+  "license": "Dolbaeb Intenational",
+  "category": "Framework",
+  "dependencies": {}
+}

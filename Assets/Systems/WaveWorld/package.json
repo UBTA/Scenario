@@ -1,0 +1,9 @@
+﻿{
+  "name": "com.weackss.scenario.systems.wave-placer",
+  "displayName": "Scenario.Systems.WavePlacerUnit",
+  "version": "1.2.1",
+  "description": "v1.2.1 - Removed dll's approach",
+  "license": "Dolbaeb Intenational",
+  "category": "System",
+  "dependencies": {}
+}

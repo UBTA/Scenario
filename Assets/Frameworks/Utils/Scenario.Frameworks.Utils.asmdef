@@ -1,0 +1,17 @@
+{
+    "name": "Scenario.Frameworks.Utils",
+    "rootNamespace": "EblanDev.ScenarioCore.UtilsFramework",
+    "references": [
+        "DOTween.Modules",
+        "UniTask"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

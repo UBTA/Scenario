@@ -1,9 +1,0 @@
-{
-  "name": "com.weackss.scenario.frames.utils",
-  "displayName": "Scenario.Framework.Utils",
-  "version": "1.2.4",
-  "description": "v1.2.4 - Build error fix",
-  "license": "Dolbaeb Intenational",
-  "category": "Framework",
-  "dependencies": {}
-}

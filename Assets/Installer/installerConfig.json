@@ -13,40 +13,40 @@
     },
     {
       "DisplayName":"Game-Framework",
-      "Name":"com.weackss.scenario.frames.game",
+      "Name":"com.weackss.scenario.frameworks.game",
       "Version":"",
       "Description":"",
-      "Link":"https://github.com/UBTA/ScenarioFramework.git?path=Assets/GameFramework",
+      "Link":"https://github.com/UBTA/ScenarioFramework.git?path=Assets/Frameworks/Game",
       "Tag":"",
       "AvailableVersions":[""],
       "isInstalled":false
     },
     {
       "DisplayName":"UI-Framework",
-      "Name":"com.weackss.scenario.frames.ui",
+      "Name":"com.weackss.scenario.frameworks.ui",
       "Version":"",
       "Description":"",
-      "Link":"https://github.com/UBTA/ScenarioFramework.git?path=Assets/UIFramework",
+      "Link":"https://github.com/UBTA/ScenarioFramework.git?path=Assets/Frameworks/UI",
       "Tag":"",
       "AvailableVersions":[""],
       "isInstalled":false
     },
     {
       "DisplayName":"Utils-Framework",
-      "Name":"com.weackss.scenario.frames.utils",
+      "Name":"com.weackss.scenario.frameworks.utils",
       "Version":"",
       "Description":"",
-      "Link":"https://github.com/UBTA/ScenarioFramework.git?path=Assets/UtilsFramework",
+      "Link":"https://github.com/UBTA/ScenarioFramework.git?path=Assets/Frameworks/Utils",
       "Tag":"", 
       "AvailableVersions":[""],
       "isInstalled":false
     },
     {
       "DisplayName":"Character-Framework",
-      "Name":"com.weackss.scenario.frames.character",
+      "Name":"com.weackss.scenario.frameworks.character",
       "Version":"",
       "Description":"",
-      "Link":"https://github.com/UBTA/ScenarioFramework.git?path=Assets/CharacterFramework",
+      "Link":"https://github.com/UBTA/ScenarioFramework.git?path=Assets/Frameworks/Character",
       "Tag":"",
       "AvailableVersions":[""],
       "isInstalled":false
@@ -56,7 +56,7 @@
       "Name":"com.weackss.scenario.systems.scene",
       "Version":"",
       "Description":"",
-      "Link":"https://github.com/UBTA/ScenarioFramework.git?path=Assets/SceneSystem",
+      "Link":"https://github.com/UBTA/ScenarioFramework.git?path=Assets/Systems/Scene",
       "Tag":"",
       "AvailableVersions":[""],
       "isInstalled":false
@@ -66,7 +66,7 @@
       "Name":"com.weackss.scenario.systems.wave-placer",
       "Version":"",
       "Description":"",
-      "Link":"https://github.com/UBTA/ScenarioFramework.git?path=Assets/WaveWorldSystem",
+      "Link":"https://github.com/UBTA/ScenarioFramework.git?path=Assets/Systems/WaveWorld",
       "Tag":"",
       "AvailableVersions":[""],
       "isInstalled":false
@@ -76,7 +76,7 @@
       "Name":"com.weackss.scenario.systems.bullet",
       "Version":"",
       "Description":"",
-      "Link":"https://github.com/UBTA/ScenarioFramework.git?path=Assets/BulletSystem",
+      "Link":"https://github.com/UBTA/ScenarioFramework.git?path=Assets/Systems/Bullet",
       "Tag":"",
       "AvailableVersions":[""],
       "isInstalled":false
@@ -86,7 +86,7 @@
       "Name":"com.weackss.scenario.addons.weapon-module",
       "Version":"",
       "Description":"",
-      "Link":"https://github.com/UBTA/ScenarioFramework.git?path=Assets/WeaponModuleAddon",
+      "Link":"https://github.com/UBTA/ScenarioFramework.git?path=Assets/Addons/WeaponModule",
       "Tag":"",
       "AvailableVersions":[""],
       "isInstalled":false

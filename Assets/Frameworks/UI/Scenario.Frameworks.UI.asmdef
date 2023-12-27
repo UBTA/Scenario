@@ -1,0 +1,19 @@
+{
+    "name": "Scenario.Frameworks.UI",
+    "rootNamespace": "EblanDev.ScenarioCore.UIFramework",
+    "references": [
+        "Scenario.Frameworks.Game",
+        "DOTween.Modules",
+        "UniTask",
+        "Unity.TextMeshPro"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
