@@ -40,6 +40,7 @@ namespace EblanDev.ScenarioCore.UtilsFramework.Extensions
                     eventData.position - lastPosition,
                     Camera.main.ScreenPointToRay(eventData.position))
             );
+            lastPosition = eventData.position;
         }
 
         public void OnEndDrag(PointerEventData eventData)
@@ -53,6 +54,7 @@ namespace EblanDev.ScenarioCore.UtilsFramework.Extensions
                     Camera.main.ScreenPointToRay(eventData.position))
             );
             
+            lastPosition = Vector2.zero;
             start = Vector2.zero;
             IsDragging = false;
         }

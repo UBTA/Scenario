@@ -2,42 +2,18 @@ using UnityEngine;
 
 namespace EblanDev.ScenarioCore.GameFramework.Workers
 {
-    
-    /// <summary>
-    /// Воркер занимается пулингом инстанов
-    /// -Пулит один инстанс
-    /// </summary>
-    /// <typeparam name="I"></typeparam>
     public class WorkerSolo<I> where I : MonoBehaviour, IInstance
     {
-        private I instance;
-        
-        /// <summary>
-        /// Получить инстанс
-        /// </summary>
-        public I Get => instance;
-
-        /// <summary>
-        /// Родитель создаваемых инстансов. 
-        /// </summary>
+        protected I instance;
         protected Transform parent;
         
-        /// <summary>
-        /// Кэширует ссылку на родителя.
-        /// </summary>
-        /// <param name="_parent"></param>
+        public I Get => instance;
+        
         public WorkerSolo(Transform _parent)
         {
             parent = _parent;
         }
         
-        /// <summary>
-        /// Создание инстанса
-        /// </summary>
-        /// <param name="i"></param>
-        /// <returns>
-        /// Возвращает инстанс
-        /// </returns>
         public I Create(I i)
         {
             if (instance != null)
@@ -55,9 +31,6 @@ namespace EblanDev.ScenarioCore.GameFramework.Workers
             return inst;
         }
 
-        /// <summary>
-        /// Очищает весь пул вне зависимости от состояние
-        /// </summary>
         public void Clear()
         {
             if (instance != null)

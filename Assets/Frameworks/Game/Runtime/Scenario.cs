@@ -6,15 +6,8 @@ using Sirenix.Serialization;
 
 namespace EblanDev.ScenarioCore.GameFramework
 {
-    /// <summary>
-    /// Инициализация систем в Start().
-    /// Вызов сценария в Start().
-    /// </summary>
     public abstract class Scenario : SerializedMonoBehaviour
     {
-        /// <summary>
-        /// Список систем
-        /// </summary>
         [OdinSerialize] protected List<ISystem> systems;
 
         private void Start()
@@ -23,9 +16,6 @@ namespace EblanDev.ScenarioCore.GameFramework
             GameScenario();
         }
 
-        /// <summary>
-        /// Подготовка сценария и систем к работе.
-        /// </summary>
         protected virtual void Prepare()
         {
             foreach (var system in systems)
@@ -39,23 +29,14 @@ namespace EblanDev.ScenarioCore.GameFramework
             }
         }
         
-
-        /// <summary>
-        /// Завершает работу всех систем сохраняя или не сохраняя данные
-        /// </summary>
-        /// <param name="saveData"></param>
-        protected void ExitSystems(bool saveData = true)
+        protected void Exit(bool saveData = true)
         {
             foreach (var syst in systems)
             {
                 syst.Exit(saveData);
             }
         }
-
-        /// <summary>
-        /// Метод для объявления игрового сценария.
-        /// </summary>
-        /// <returns></returns>
+        
         protected abstract Task GameScenario();
     }
 }
