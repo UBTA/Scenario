@@ -1,7 +1,7 @@
 
 #About
 
-Scenario.Frameworks.Character is a module based package to create characters under commands control using scenario core.
+`Scenario.Frameworks.Character` is a module based package used to create characters under commands control.
 
 # Modules
 
