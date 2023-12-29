@@ -1,4 +1,4 @@
-#About
+# About
 
 `Scenario.Frameworks.Character` is a module based package used to create characters under commands control.
 
