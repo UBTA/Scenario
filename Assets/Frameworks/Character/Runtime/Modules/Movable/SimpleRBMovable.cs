@@ -142,13 +142,13 @@ namespace EblanDev.ScenarioCore.CharacterFramework.Modules.Movable
                     if (Vector3.Distance(rb.transform.position, hit.point) > 0.1f)
                     {
                         grounded = false;
-                        rb.velocity = new Vector3(velocity.x, Physics.gravity.y, velocity.z);
+                        rb.velocity = new Vector3(velocity.x, Physics.gravity.y, velocity.z).normalized * speed;
                         return;
                     }
                 }
 
                 grounded = true;
-                rb.velocity = new Vector3(velocity.x, 0f, velocity.z);
+                rb.velocity = new Vector3(velocity.x, 0f, velocity.z).normalized * speed;
             }
             else
             {
