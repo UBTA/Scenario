@@ -3,7 +3,7 @@ using EblanDev.ScenarioCore.GameFramework;
 using EblanDev.ScenarioCore.UtilsFramework.Extensions;
 using UnityEngine;
 
-namespace EblanDev.ScenarioCore.Systems.FXSystemUnit
+namespace EblanDev.ScenarioCore.FXDecals
 {
     public class DecalInstance : Instance
     {

@@ -1,0 +1,19 @@
+{
+    "name": "Scenario.Addons.FXDecals",
+    "rootNamespace": "EblanDev.ScenarioCore.FXDecals",
+    "references": [
+        "Scenario.Frameworks.Game",
+        "Scenario.Frameworks.Character",
+        "Scenario.Systems.FXUnit",
+        "Scenario.Frameworks.Utils"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

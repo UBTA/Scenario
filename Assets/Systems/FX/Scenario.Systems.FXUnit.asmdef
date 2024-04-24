@@ -3,7 +3,6 @@
   "rootNamespace": "EblanDev.ScenarioCore.Systems.FXSystemUnit",
   "references": [
     "Scenario.Frameworks.Game",
-    "Scenario.Frameworks.Character",
     "Scenario.Frameworks.Utils"
   ],
   "includePlatforms": [],

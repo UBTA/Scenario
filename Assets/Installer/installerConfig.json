@@ -100,6 +100,16 @@
       "Tag":"",
       "AvailableVersions":[""],
       "isInstalled":false
+    },
+    {
+      "DisplayName":"FXDecal-Addon",
+      "Name":"com.weackss.scenario.addons.fx-decals",
+      "Version":"",
+      "Description":"",
+      "Link":"https://github.com/UBTA/ScenarioFramework.git?path=Assets/Addons/FXDecals",
+      "Tag":"",
+      "AvailableVersions":[""],
+      "isInstalled":false
     }
   ]
 }

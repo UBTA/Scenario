@@ -1,7 +1,7 @@
 ﻿using EblanDev.ScenarioCore.GameFramework.Workers;
 using UnityEngine;
 
-namespace EblanDev.ScenarioCore.Systems.FXSystemUnit
+namespace EblanDev.ScenarioCore.FXDecals
 {
     public class DecalWorker : WorkerPulled<DecalInstance>
     {
