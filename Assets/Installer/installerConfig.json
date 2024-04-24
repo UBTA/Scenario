@@ -82,6 +82,16 @@
       "isInstalled":false
     },
     {
+      "DisplayName":"FX-System",
+      "Name":"com.weackss.scenario.systems.fx",
+      "Version":"",
+      "Description":"",
+      "Link":"https://github.com/UBTA/ScenarioFramework.git?path=Assets/Systems/FX",
+      "Tag":"",
+      "AvailableVersions":[""],
+      "isInstalled":false
+    },
+    {
       "DisplayName":"WeaponModule-Addon",
       "Name":"com.weackss.scenario.addons.weapon-module",
       "Version":"",

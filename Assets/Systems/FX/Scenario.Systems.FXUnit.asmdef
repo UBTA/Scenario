@@ -1,0 +1,18 @@
+﻿{
+  "name": "Scenario.Systems.FXUnit",
+  "rootNamespace": "EblanDev.ScenarioCore.Systems.FXSystemUnit",
+  "references": [
+    "Scenario.Frameworks.Game",
+    "Scenario.Frameworks.Character",
+    "Scenario.Frameworks.Utils"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
