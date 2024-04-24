@@ -115,6 +115,49 @@ namespace EblanDev.ScenarioCore.UtilsFramework.Extensions
                 }
             }
         }
+        
+        public static async UniTask MoveToAsync(this Transform movable, Transform to, float time, bool isLocal  = false,
+            Ease easing = Ease.Linear)
+        {
+            var lerpCoef = 0f;
+            var startTime = Time.time;
+
+            while (lerpCoef < 1f)
+            {
+                await UniTask.Yield();
+                
+                if (movable == null)
+                {
+                    return;
+                }
+                
+                if (to == null)
+                {
+                    return;
+                }
+
+                var fromPosition = movable.position;
+                var fromRotation = movable.rotation;
+            
+                var toPosition = to.position;
+                var toRotation = to.rotation;
+
+                var currentTime = Time.time - startTime;
+                lerpCoef = currentTime / time;
+
+                var easedCoef = DOVirtual.EasedValue(0f, 1f, lerpCoef, easing);
+                if (isLocal)
+                {
+                    movable.localPosition = Vector3.Lerp(fromPosition, toPosition, easedCoef);
+                    movable.localRotation = Quaternion.Lerp(fromRotation, toRotation, easedCoef);
+                }
+                else
+                {
+                    movable.position = Vector3.Lerp(fromPosition, toPosition, easedCoef);
+                    movable.rotation = Quaternion.Lerp(fromRotation, toRotation, easedCoef);
+                }
+            }
+        }
 
         private static bool ArePointsNull(Transform movable, Transform from, Transform to)
         {
