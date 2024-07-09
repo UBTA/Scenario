@@ -1,0 +1,17 @@
+{
+  "name": "Scenario.Systems.PopUpSystem",
+  "rootNamespace": "EblanDev.ScenarioCore.Systems.PopUpSystemUnit",
+  "references": [
+    "Scenario.Frameworks.Game",
+    "Scenario.Frameworks.UI"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
