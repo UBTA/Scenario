@@ -16,9 +16,9 @@ namespace EblanDev.ScenarioCore.UIFramework.UIElements
         /// <summary>
         /// 
         /// </summary>
-        protected override void OnInit()
+        public override void Init()
         {
-            base.OnInit();
+            base.Init();
             SetValueImmediately("0");
         }
 
@@ -29,7 +29,6 @@ namespace EblanDev.ScenarioCore.UIFramework.UIElements
         public void SetValue(string value)
         {
             text.text = prefix + value + postfix;
-            EnableAttention(1);
         }
 
         /// <summary>

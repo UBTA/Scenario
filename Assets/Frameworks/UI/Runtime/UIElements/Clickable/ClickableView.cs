@@ -50,7 +50,6 @@ namespace EblanDev.ScenarioCore.UIFramework.UIElements
             OnDownEvent?.Invoke();
             
             pointerTween?.Kill(true);
-            attentionTween?.Kill(true);
             if (PointerDown != null)
             {
                 pointerTween = PointerDown.Animate(this);
@@ -66,7 +65,6 @@ namespace EblanDev.ScenarioCore.UIFramework.UIElements
             OnUpEvent?.Invoke();
             
             pointerTween?.Kill(true);
-            attentionTween?.Kill(true);
             if (PointerUp != null)
             {
                 pointerTween = PointerUp.Animate(this);
