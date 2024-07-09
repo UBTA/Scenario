@@ -1,0 +1,9 @@
+{
+  "name": "com.weackss.scenario.systems.level",
+  "displayName": "Scenario.Systems.Level",
+  "version": "1.0.0",
+  "description": "v1.0.0 - Initial",
+  "license": "Dolbaeb Intenational",
+  "category": "System",
+  "dependencies": {}
+}

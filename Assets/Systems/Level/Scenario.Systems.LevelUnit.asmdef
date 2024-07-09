@@ -1,0 +1,17 @@
+{
+  "name": "Scenario.Systems.LevelSystem",
+  "rootNamespace": "EblanDev.ScenarioCore.Systems.LevelSystemUnit",
+  "references": [
+    "Scenario.Frameworks.Game",
+    "Scenario.Frameworks.Utils"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
