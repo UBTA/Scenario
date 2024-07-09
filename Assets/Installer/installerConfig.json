@@ -92,6 +92,46 @@
       "isInstalled":false
     },
     {
+      "DisplayName":"Sound-System",
+      "Name":"com.weackss.scenario.systems.sound",
+      "Version":"",
+      "Description":"",
+      "Link":"https://github.com/UBTA/ScenarioFramework.git?path=Assets/Systems/Sound",
+      "Tag":"",
+      "AvailableVersions":[""],
+      "isInstalled":false
+    },
+    {
+      "DisplayName":"Level-System",
+      "Name":"com.weackss.scenario.systems.level",
+      "Version":"",
+      "Description":"",
+      "Link":"https://github.com/UBTA/ScenarioFramework.git?path=Assets/Systems/Level",
+      "Tag":"",
+      "AvailableVersions":[""],
+      "isInstalled":false
+    },
+    {
+      "DisplayName":"PopUp-System",
+      "Name":"com.weackss.scenario.systems.popup",
+      "Version":"",
+      "Description":"",
+      "Link":"https://github.com/UBTA/ScenarioFramework.git?path=Assets/Systems/PopUp",
+      "Tag":"",
+      "AvailableVersions":[""],
+      "isInstalled":false
+    },
+    {
+      "DisplayName":"Tutorial-System",
+      "Name":"com.weackss.scenario.systems.tutorial",
+      "Version":"",
+      "Description":"",
+      "Link":"https://github.com/UBTA/ScenarioFramework.git?path=Assets/Systems/Tutorial",
+      "Tag":"",
+      "AvailableVersions":[""],
+      "isInstalled":false
+    },
+    {
       "DisplayName":"WeaponModule-Addon",
       "Name":"com.weackss.scenario.addons.weapon-module",
       "Version":"",
