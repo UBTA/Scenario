@@ -1,0 +1,20 @@
+{
+  "name": "Scenario.Systems.TutorialSystem",
+  "rootNamespace": "EblanDev.ScenarioCore.Systems.TutorialSystemUnit",
+  "references": [
+    "Scenario.Frameworks.Game",
+    "Scenario.Frameworks.UI",
+    "Scenario.Frameworks.Utils",
+    "Unity.TextMeshPro",
+    "UniTask"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
