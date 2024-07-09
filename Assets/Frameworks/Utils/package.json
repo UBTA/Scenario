@@ -1,8 +1,8 @@
 {
   "name": "com.weackss.scenario.frameworks.utils",
-  "displayName": "Scenario.Framework.Utils",
-  "version": "1.2.6",
-  "description": "v1.2.6 - Added new transform extensions",
+  "displayName": "Scenario.Frameworks.Utils",
+  "version": "1.2.7",
+  "description": "v1.2.7 - Proper display name",
   "license": "Dolbaeb Intenational",
   "category": "Framework",
   "dependencies": {}

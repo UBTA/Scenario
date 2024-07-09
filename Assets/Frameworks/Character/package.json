@@ -1,8 +1,8 @@
 ﻿{
   "name": "com.weackss.scenario.frameworks.character",
   "displayName": "Scenario.Frameworks.Character",
-  "version": "1.2.3",
-  "description": "v1.2.3 - Removed dll's approach",
+  "version": "1.2.4",
+  "description": "v1.2.4 - Fix Animatable Module",
   "license": "Dolbaeb Intenational",
   "category": "Framework",
   "dependencies": {}

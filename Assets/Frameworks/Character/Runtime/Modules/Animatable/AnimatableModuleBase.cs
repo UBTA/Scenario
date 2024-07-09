@@ -20,14 +20,8 @@ namespace EblanDev.ScenarioCore.CharacterFramework.Modules.Animatable
             if (velocity.magnitude > 0.0001f)
             {
                 var dot = Vector3.Dot(velocity.normalized, look.normalized);
-                var projVel = new Vector2(velocity.normalized.x, velocity.normalized.z);
-                var projLook = new Vector2(look.x, look.z);
-                var sign = 1f;
                 
-                if (projVel.x < projLook.x)
-                {
-                    sign = -1f;
-                }
+                var sign = Mathf.Sign(Vector3.Dot(velocity.normalized, -transform.right));
                 
                 result.y = dot;
                 result.x = sign * (1 - Mathf.Abs(dot));

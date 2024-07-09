@@ -7,20 +7,13 @@ namespace EblanDev.ScenarioCore.UIFramework.Bus
     /// <summary>
     /// Обработчик событий для шины.
     /// </summary>
-    /// <typeparam name="T">
-    /// Тип с которым работает ивент.
-    /// </typeparam>
-    public sealed class BusEvent<T>
+    public class BusEvent
     {
         /// <summary>
         /// Событие на которое можно подписаться.
         /// </summary>
-        public event Action<T> E;
-        /// <summary>
-        /// Последняя дата с которой инвокалось событие.
-        /// </summary>
-        public T LastInvokeData;
-
+        public event Action E;
+        
         private bool Invoked = false;
 
         /// <summary>
@@ -29,18 +22,7 @@ namespace EblanDev.ScenarioCore.UIFramework.Bus
         public void Invoke()
         {
             Invoked = true;
-            E?.Invoke(default);
-        }
-
-        /// <summary>
-        /// Invoke события.
-        /// </summary>
-        /// <param name="data"></param>
-        public void Invoke(T data)
-        {
-            LastInvokeData = data;
-            Invoked = true;
-            E?.Invoke(data);
+            E?.Invoke();
         }
 
         /// <summary>
@@ -60,7 +42,6 @@ namespace EblanDev.ScenarioCore.UIFramework.Bus
                     return;
                 }
             }
-            
             Invoked = false;
         }
     }
@@ -69,70 +50,25 @@ namespace EblanDev.ScenarioCore.UIFramework.Bus
     /// Обработчик событий для шины.
     /// </summary>
     /// <typeparam name="T">
-    /// Первый тип с которым работает ивент.
+    /// Тип с которым работает ивент.
     /// </typeparam>
-    /// <typeparam name="T1">
-    /// Второй тип с которым работает ивент.
-    /// </typeparam>
-    public sealed class BusEvent<T, T1>
+    public class BusEvent<T> : BusEvent
     {
         /// <summary>
-        /// Событие на которое можно подписаться.
+        /// Последняя дата с которой инвокалось событие.
         /// </summary>
-        public event Action<T, T1> E;
-
-        private bool Invoked = false;
-
+        public T LastV;
+        
         /// <summary>
-        /// Последняя первая дата с которой инвокалось событие.
+        /// Инвок события.
         /// </summary>
-        public T LastInvokeData;
-        /// <summary>
-        /// Последняя вторая дата с которой инвокалось событие.
-        /// </summary>
-        public T1 LastInvokeData1;
-
-        /// <summary>
-        /// Invoke события.
-        /// </summary>
-        public void Invoke()
-        {
-            Invoked = true;
-            E?.Invoke(default, default);
-        }
-
-        /// <summary>
-        /// Invoke события.
-        /// </summary>
-        /// <param name="data"></param>
-        /// <param name="data1"></param>
-        public void Invoke(T data, T1 data1)
-        {
-            LastInvokeData = data;
-            LastInvokeData1 = data1;
-            Invoked = true;
-            E?.Invoke(data, data1);
-        }
-
-        /// <summary>
-        /// Ожидание первого после начала ожидания Invoke.
-        /// </summary>
-        /// <param name="token">
-        /// Токен для сопровождения эвейтера.
+        /// <param name="data">
+        /// Инвок дата
         /// </param>
-        public async Task Awaiter(CancellationToken token)
+        public void Invoke(T data)
         {
-            while (Invoked == false)
-            {
-                await Task.Yield();
-                if (token.IsCancellationRequested)
-                {
-                    Invoked = false;
-                    return;
-                }
-            }
-            
-            Invoked = false;
+            LastV = data;
+            Invoke();
         }
     }
 
@@ -140,79 +76,69 @@ namespace EblanDev.ScenarioCore.UIFramework.Bus
     /// Обработчик событий для шины.
     /// </summary>
     /// <typeparam name="T">
-    /// Первый тип с которым работает ивент.
+    /// Тип с которым работает ивент.
     /// </typeparam>
     /// <typeparam name="T1">
-    /// Второй тип с которым работает ивент.
+    /// Тип1 с которым работает ивент.
     /// </typeparam>
-    /// <typeparam name="T2">
-    /// Третий тип с которым работает ивент.
-    /// </typeparam>
-    public sealed class BusEvent<T, T1, T2>
+    public class BusEvent<T, T1> : BusEvent<T>
     {
         /// <summary>
-        /// Событие на которое можно подписаться.
+        /// Последняя дата 1 с которой инвокалось событие.
         /// </summary>
-        public event Action<T, T1, T2> E;
-
-        private bool Invoked = false;
+        public T1 LastV1;
 
         /// <summary>
-        /// Последняя первая дата с которой инвокалось событие.
+        /// Инвок события.
         /// </summary>
-        public T LastInvokeData;
-        /// <summary>
-        /// Последняя вторая дата с которой инвокалось событие.
-        /// </summary>
-        public T1 LastInvokeData1;
-        /// <summary>
-        /// Последняя третья дата с которой инвокалось событие.
-        /// </summary>
-        public T2 LastInvokeData2;
-
-        /// <summary>
-        /// Invoke события.
-        /// </summary>
-        public void Invoke()
+        /// <param name="data">
+        /// Инвок дата
+        /// </param>
+        /// <param name="data1">
+        /// Инвок дата1
+        /// </param>
+        public void Invoke(T data, T1 data1)
         {
-            Invoked = true;
-            E?.Invoke(default, default, default);
+            LastV1 = data1;
+            Invoke(data);
         }
+    }
+
+    /// <summary>
+    /// Обработчик событий для шины.
+    /// </summary>
+    /// <typeparam name="T">
+    /// Тип с которым работает ивент.
+    /// </typeparam>
+    /// <typeparam name="T1">
+    /// Тип1 с которым работает ивент.
+    /// </typeparam>
+    /// <typeparam name="T2">
+    /// Тип2 с которым работает ивент.
+    /// </typeparam>
+    public class BusEvent<T, T1, T2> : BusEvent<T, T1>
+    {
+        /// <summary>
+        /// Последняя дата 1 с которой инвокалось событие.
+        /// </summary>
+        public T2 LastV2;
 
         /// <summary>
-        /// Invoke события.
+        /// Инвок события.
         /// </summary>
-        /// <param name="data"></param>
-        /// <param name="data1"></param>
-        /// <param name="data2"></param>
+        /// <param name="data">
+        /// Инвок дата
+        /// </param>
+        /// <param name="data1">
+        /// Инвок дата1
+        /// </param>
+        /// <param name="data2">
+        /// Инвок дата2
+        /// </param>
         public void Invoke(T data, T1 data1, T2 data2)
         {
-            LastInvokeData = data;
-            LastInvokeData1 = data1;
-            LastInvokeData2 = data2;
-            Invoked = true;
-            E?.Invoke(data, data1, data2);
-        }
-
-        /// <summary>
-        /// Ожидание первого после начала ожидания Invoke.
-        /// </summary>
-        /// <param name="token">
-        /// Токен для сопровождения эвейтера.
-        /// </param>
-        public async Task Awaiter(CancellationToken token)
-        {
-            while (Invoked == false)
-            {
-                await Task.Yield();
-                if (token.IsCancellationRequested)
-                {
-                    Invoked = false;
-                    return;
-                }
-            }
-            
-            Invoked = false;
+            LastV2 = data2;
+            Invoke(data, data1);
         }
     }
 }
