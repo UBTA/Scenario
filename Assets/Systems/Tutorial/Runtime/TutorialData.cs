@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace EblanDev.ScenarioCore.Systems.TutorialSystemUnit
 {
-    [CreateAssetMenu]
+    [CreateAssetMenu(fileName = "TutorialData", menuName = "ScenarioFramework/Systems/TutorialData", order = 1)]
     public class TutorialData : DataPrefs<TutorialPrefs>
     {
         public void SetTutorialPassed(int tutorID)

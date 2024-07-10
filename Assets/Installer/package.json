@@ -1,7 +1,7 @@
 ﻿{
   "name": "com.weackss.scenario.installer",
   "displayName": "Scenario.Installer",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Installer tool for scenario framework.",
   "license": "Dolbaeb Intenational",
   "category": "Framework",
