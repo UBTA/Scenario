@@ -13,12 +13,12 @@ namespace EblanDev.ScenarioCore.FXDecals
             decals = new DecalWorker(transform);
         }
         
-        public static void Decal(int id, Vector3 pos,  Vector3 dir, Transform parent = null)
+        public static void Decal(DecalID ID, Vector3 pos,  Vector3 dir, Transform parent = null)
         {
             var data = DataStatic as FXDataExtended;
             if (data != null)
             {
-                var decal = decals.Create(data.GetDecal(id));
+                var decal = decals.Create(data.GetDecal(ID));
 
                 decal.transform.position = pos;
 

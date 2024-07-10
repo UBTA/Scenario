@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using EblanDev.ScenarioCore.UtilsFramework.ID;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -257,6 +258,77 @@ namespace EblanDev.ScenarioCore.UtilsFramework.Extensions
 			{
 				list.AddUnique(addList[iAddList]);
 			}
+		}
+		
+		public static string FindDefaultName<TData>(this List<TData> list, string prefix)
+			where TData : INameContainer
+		{
+			var defaultNames = list.FindAll(data => data.GetName().Contains(prefix));
+			var iDefaultAsset = defaultNames.Count == 0
+				? -1
+				: defaultNames.Max(assetData =>
+					int.TryParse(assetData.GetName().Replace(prefix, ""), out var i) ? i : -1);
+
+			return $"{prefix}{(iDefaultAsset + 1).ToString()}";
+		}
+		
+		public static bool ContainsName<TData>(this IReadOnlyList<TData> list, string name)
+			where TData : INameContainer => list.Count > 0 && list.Any(data => data.GetName() == name);
+		
+		public static bool ContainsId<TData>(this IReadOnlyList<TData> list, int id)
+			where TData : IIDContainer
+		{
+			for (var i = 0; i < list.Count; i++)
+			{
+				if (list[i].GetID() == id)
+				{
+					return true;
+				}
+			}
+			
+			return false;
+		}
+		
+		public static int FindNewId<TData>(this IReadOnlyList<TData> list, int minID = IDHelper.Default)
+			where TData : IIDContainer
+		{
+			var nData = list.Count;
+
+			if (nData == 0)
+			{
+				return minID;
+			}
+
+			var maxId = list.Max(data => data.GetID());
+
+			if (maxId + 2 == nData + minID)
+			{
+				return maxId + 1;
+			}
+
+			for (var id = minID; id < maxId; id++)
+			{
+				if (list.ContainsId(id) == false)
+				{
+					return id;
+				}
+			}
+
+			return maxId + 1;
+		}
+		
+		public static TData FindById<TData>(this IReadOnlyList<TData> list, int id)
+			where TData : IIDContainer
+		{
+			for (var i = 0; i < list.Count; i++)
+			{
+				if (list[i].GetID() == id)
+				{
+					return list[i];
+				}
+			}
+
+			return default;
 		}
 
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]

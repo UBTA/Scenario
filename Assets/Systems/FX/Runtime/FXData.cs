@@ -9,11 +9,11 @@ namespace EblanDev.ScenarioCore.Systems.FXSystemUnit
     {
         [SerializeField] private List<ParticleInstance> particles;
 
-        public ParticleInstance GetParticle(int id)
+        public ParticleInstance GetParticle(FXID id)
         {
             foreach (var particle in particles)
             {
-                if (particle.TypeID == id)
+                if (particle.ID == id)
                 {
                     return particle;
                 }

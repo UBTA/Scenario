@@ -11,7 +11,7 @@ namespace EblanDev.ScenarioCore.Systems.BulletSystemUnit
 
         protected override bool Compare(BulletInstance instance, BulletInstance anotherInstance)
         {
-            return instance.BulletID == anotherInstance.BulletID;
+            return instance.ID == anotherInstance.ID;
         }
     }
 }

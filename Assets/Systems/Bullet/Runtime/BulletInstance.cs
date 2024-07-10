@@ -6,7 +6,7 @@ namespace EblanDev.ScenarioCore.Systems.BulletSystemUnit
 {
     public class BulletInstance : Instance
     {
-        public int BulletID;
+        public BulletID ID;
         
         [SerializeField] private float startSpeed;
         [SerializeField] private Rigidbody rb;

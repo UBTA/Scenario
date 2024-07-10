@@ -5,7 +5,7 @@ namespace EblanDev.ScenarioCore.Systems.SoundSystemUnit
 {
     public class SoundInstance : Instance
     {
-        public int TypeID;
+        public SoundID ID;
         
         [SerializeField] private AudioSource source;
 

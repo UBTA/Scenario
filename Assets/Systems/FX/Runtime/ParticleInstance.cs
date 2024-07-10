@@ -8,7 +8,7 @@ namespace EblanDev.ScenarioCore.Systems.FXSystemUnit
 {
     public class ParticleInstance : Instance
     {
-        public int TypeID;
+        public FXID ID;
 
         [SerializeField] private List<GameObject> enableObjects;
         [SerializeField] private List<ParticleSystem> particles;

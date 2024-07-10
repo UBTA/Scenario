@@ -1,8 +1,8 @@
 {
   "name": "com.weackss.scenario.systems.tutorial",
   "displayName": "Scenario.Systems.Tutorial",
-  "version": "1.0.1",
-  "description": "v1.0.1 - Minor fix",
+  "version": "1.0.2",
+  "description": "v1.0.2 - Tutorial Id",
   "license": "Dolbaeb Intenational",
   "category": "System",
   "dependencies": {}

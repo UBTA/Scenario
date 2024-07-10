@@ -1,8 +1,8 @@
 ﻿{
   "name": "com.weackss.scenario.systems.bullet",
   "displayName": "Scenario.Systems.BulletUnit",
-  "version": "1.0.1",
-  "description": "v1.0.1 - Removed dll's approach",
+  "version": "1.0.2",
+  "description": "v1.0.2 - Bullet Id",
   "license": "Dolbaeb Intenational",
   "category": "System",
   "dependencies": {}

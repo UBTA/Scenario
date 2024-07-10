@@ -13,7 +13,7 @@ namespace EblanDev.ScenarioCore.Systems.SoundSystemUnit
             sounds = new SoundWorker(transform);
         }
 
-        public static void Sound(int id)
+        public static void Sound(SoundID ID)
         {
             if (DataStatic.Settings.Mute)
             {
@@ -25,7 +25,7 @@ namespace EblanDev.ScenarioCore.Systems.SoundSystemUnit
                 return;
             }
             
-            var sound = sounds.Create(DataStatic.GetSound(id));
+            var sound = sounds.Create(DataStatic.GetSound(ID));
             sound.Play();
         }
     }

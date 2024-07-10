@@ -11,7 +11,7 @@ namespace EblanDev.ScenarioCore.Systems.FXSystemUnit
 
         protected override bool Compare(ParticleInstance instance, ParticleInstance anotherInstance)
         {
-            return instance.TypeID == anotherInstance.TypeID;
+            return instance.ID == anotherInstance.ID;
         }
     }
 }

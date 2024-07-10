@@ -1,8 +1,8 @@
 ﻿{
   "name": "com.weackss.scenario.addons.fx-decals",
   "displayName": "Scenario.Addons.FXDecals",
-  "version": "1.0.0",
-  "description": "v1.0.0 - Initial",
+  "version": "1.0.1",
+  "description": "v1.0.1 - Decal Id",
   "license": "Dolbaeb Intenational",
   "category": "Addon",
   "dependencies": {}

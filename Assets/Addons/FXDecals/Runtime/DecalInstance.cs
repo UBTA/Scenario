@@ -7,7 +7,7 @@ namespace EblanDev.ScenarioCore.FXDecals
 {
     public class DecalInstance : Instance
     {
-        public int TypeID;
+        public DecalID ID;
 
         [SerializeField] private Material[] decals;
         [SerializeField] private MeshRenderer render;

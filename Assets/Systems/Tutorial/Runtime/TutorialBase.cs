@@ -5,9 +5,9 @@ namespace EblanDev.ScenarioCore.Systems.TutorialSystemUnit
 {
     public abstract class TutorialBase : MonoBehaviour
     {
-        public Action<int> OnTutorPassed;
+        public Action<TutorialID> OnTutorPassed;
         
-        public int ID;
+        public TutorialID ID;
         public bool IsActive => isActive;
 
         protected TutorialCanvas tutorialCanvas;

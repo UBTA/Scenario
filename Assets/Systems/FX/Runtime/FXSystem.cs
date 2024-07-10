@@ -15,9 +15,9 @@ namespace EblanDev.ScenarioCore.Systems.FXSystemUnit
             thisT = transform;
         }
 
-        public static void Particle(int id, Vector3 pos, Vector3 dir, Transform parent = null)
+        public static void Particle(FXID ID, Vector3 pos, Vector3 dir, Transform parent = null)
         {
-            var particle = particles.Create(DataStatic.GetParticle(id));
+            var particle = particles.Create(DataStatic.GetParticle(ID));
 
             particle.transform.position = pos;
             particle.transform.rotation = Quaternion.LookRotation(-dir);

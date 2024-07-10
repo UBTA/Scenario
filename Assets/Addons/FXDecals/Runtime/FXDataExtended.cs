@@ -9,11 +9,11 @@ namespace EblanDev.ScenarioCore.FXDecals
     {
         [SerializeField] private List<DecalInstance> decals;
         
-        public DecalInstance GetDecal(int id)
+        public DecalInstance GetDecal(DecalID ID)
         {
             foreach (var decal in decals)
             {
-                if (decal.TypeID == id)
+                if (decal.ID == ID)
                 {
                     return decal;
                 }

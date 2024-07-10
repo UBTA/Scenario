@@ -11,7 +11,7 @@ namespace EblanDev.ScenarioCore.Systems.SoundSystemUnit
 
         protected override bool Compare(SoundInstance instance, SoundInstance anotherInstance)
         {
-            return instance.TypeID == anotherInstance.TypeID;
+            return instance.ID == anotherInstance.ID;
         }
     }
 }

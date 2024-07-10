@@ -12,11 +12,11 @@ namespace EblanDev.ScenarioCore.Systems.SoundSystemUnit
 
         public SoundSettings Settings => PData;
         
-        public SoundInstance GetSound(int id)
+        public SoundInstance GetSound(SoundID ID)
         {
             foreach (var sound in sounds)
             {
-                if (sound.TypeID == id)
+                if (sound.ID == ID)
                 {
                     return sound;
                 }

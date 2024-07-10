@@ -11,7 +11,7 @@ namespace EblanDev.ScenarioCore.FXDecals
 
         protected override bool Compare(DecalInstance instance, DecalInstance anotherInstance)
         {
-            return instance.TypeID == anotherInstance.TypeID;
+            return instance.ID == anotherInstance.ID;
         }
     }
 }

@@ -8,11 +8,11 @@ namespace EblanDev.ScenarioCore.Systems.BulletSystemUnit
     {
         [SerializeField] private BulletInstance[] bullets;
 
-        public BulletInstance Bullet(int BulletID)
+        public BulletInstance Bullet(BulletID BulletID)
         {
             foreach (var bullet in bullets)
             {
-                if (bullet.BulletID == BulletID)
+                if (bullet.ID == BulletID)
                 {
                     return bullet;
                 }

@@ -12,9 +12,9 @@ namespace EblanDev.ScenarioCore.Systems.BulletSystemUnit
             bullets = new BulletWorker(transform);
         }
         
-        public static BulletInstance Shoot(int BulletID, Vector3 from, Vector3 direction)
+        public static BulletInstance Shoot(BulletID ID, Vector3 from, Vector3 direction)
         {
-            var bullet = bullets.Create(DataStatic.Bullet(BulletID));
+            var bullet = bullets.Create(DataStatic.Bullet(ID));
             bullet.Impulse(from, direction);
 
             return bullet;

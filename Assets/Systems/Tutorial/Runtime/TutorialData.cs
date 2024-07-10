@@ -9,7 +9,7 @@ namespace EblanDev.ScenarioCore.Systems.TutorialSystemUnit
     [CreateAssetMenu(fileName = "TutorialData", menuName = "ScenarioFramework/Systems/TutorialData", order = 1)]
     public class TutorialData : DataPrefs<TutorialPrefs>
     {
-        public void SetTutorialPassed(int tutorID)
+        public void SetTutorialPassed(TutorialID tutorID)
         {
             if (PData.passedTutorialIds.TryFind((v) => tutorID == v, out var id))
             {
@@ -19,7 +19,7 @@ namespace EblanDev.ScenarioCore.Systems.TutorialSystemUnit
             PData.passedTutorialIds.Add(tutorID);
         }
 
-        public bool IsTutorialPassed(int tutorID)
+        public bool IsTutorialPassed(TutorialID tutorID)
         {
             return PData.passedTutorialIds.TryFind((v) => tutorID == v, out var id);
         }

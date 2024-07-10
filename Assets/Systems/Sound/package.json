@@ -1,8 +1,8 @@
 {
   "name": "com.weackss.scenario.systems.sound",
   "displayName": "Scenario.Systems.Sound",
-  "version": "1.0.0",
-  "description": "v1.0.0 - Initial",
+  "version": "1.0.1",
+  "description": "v1.0.1 - Sound Id",
   "license": "Dolbaeb Intenational",
   "category": "System",
   "dependencies": {}
