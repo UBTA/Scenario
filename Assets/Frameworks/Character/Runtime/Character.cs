@@ -59,17 +59,7 @@ namespace EblanDev.ScenarioCore.CharacterFramework
             Rules.Add(rule);
             return this;
         }
-        public IRuleUser SetRuleBook(RuleBook rules)
-        {
-            Rules.Stop();
-            
-            rules.Target = Puppet;
-            rules.Start();
-            
-            Rules = rules;
-
-            return this;
-        }
+        
         public IRuleUser RemoveRule<R>() where R : IRule
         {
             Rules.Remove<R>();   

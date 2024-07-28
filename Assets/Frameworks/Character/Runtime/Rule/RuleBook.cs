@@ -30,14 +30,8 @@ namespace EblanDev.ScenarioCore.CharacterFramework.Rules
             
             cancelTokenSource = new CancellationTokenSource();
             token = cancelTokenSource.Token;
-
             
             Start();
-        }
-
-        public Puppet Target
-        {
-            set => RulesTarget = value;
         }
 
         public bool TryGet<R>(out R res) where R : IRule
@@ -57,11 +51,16 @@ namespace EblanDev.ScenarioCore.CharacterFramework.Rules
         
         public void Add(IRule rule)
         {
+            rule.Start(RulesTarget, this);
             addQueue.Add(rule);
         }
 
         public void Remove<R>() where R : IRule
         {
+            if (TryGet<R>(out var rule))
+            {
+                rule.Stop();
+            }
             removeQueue.Add(typeof(R));
         }
 
@@ -129,8 +128,6 @@ namespace EblanDev.ScenarioCore.CharacterFramework.Rules
                 {
                     Rules.Add(rule);
                 }
-                
-                rule.Start(RulesTarget, this);
             }
             
             addQueue.Clear();
@@ -150,7 +147,6 @@ namespace EblanDev.ScenarioCore.CharacterFramework.Rules
                     if (r.GetType() == rule)
                     {
                         Rules.Remove(r);
-                        r.Stop();
                     }
                 }
             }

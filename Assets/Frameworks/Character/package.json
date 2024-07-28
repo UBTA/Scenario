@@ -1,8 +1,8 @@
 ﻿{
   "name": "com.weackss.scenario.frameworks.character",
   "displayName": "Scenario.Frameworks.Character",
-  "version": "1.2.4",
-  "description": "v1.2.4 - Fix Animatable Module",
+  "version": "1.2.5",
+  "description": "v1.2.5 - Fix Rules",
   "license": "Dolbaeb Intenational",
   "category": "Framework",
   "dependencies": {}
