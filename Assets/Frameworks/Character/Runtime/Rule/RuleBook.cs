@@ -142,13 +142,18 @@ namespace EblanDev.ScenarioCore.CharacterFramework.Rules
 
             foreach (var rule in removeQueue)
             {
+                IRule ruleToRemove = null;
+                
                 foreach (var r in Rules)
                 {
                     if (r.GetType() == rule)
                     {
-                        Rules.Remove(r);
+                        ruleToRemove = r;
+                        break;
                     }
                 }
+                
+                Rules.Remove(ruleToRemove);
             }
             
             removeQueue.Clear();
