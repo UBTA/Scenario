@@ -1,10 +1,11 @@
 using System.Collections.Generic;
 using EblanDev.ScenarioCore.GameFramework.Systems;
+using EblanDev.ScenarioCore.UIFramework.Bus;
 using UnityEngine;
 
 namespace EblanDev.ScenarioCore.Systems.PopUpSystemUnit
 {
-    public class PupUpSystem : SystemBase
+    public class PopUpSystem : SystemBase
     {
         [SerializeField] private List<PopUpView> popUps;
         
@@ -19,6 +20,17 @@ namespace EblanDev.ScenarioCore.Systems.PopUpSystemUnit
             foreach (var popUp in popUps)
             {
                 popUp.Init();
+            }
+        }
+
+        public static void SetupBus(UIBus bus)
+        {
+            foreach (var popUp in popUpsSt)
+            {
+                if (popUp is IBusPopUp<UIBus> busPopUp)
+                {
+                    busPopUp.SetupBus(bus);
+                }
             }
         }
 

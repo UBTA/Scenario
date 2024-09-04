@@ -1,8 +1,8 @@
 {
   "name": "com.weackss.scenario.systems.popup",
   "displayName": "Scenario.Systems.PopUp",
-  "version": "1.0.0",
-  "description": "v1.0.0 - Initial",
+  "version": "1.0.1",
+  "description": "v1.0.1 - Bus setup",
   "license": "Dolbaeb Intenational",
   "category": "System",
   "dependencies": {}
