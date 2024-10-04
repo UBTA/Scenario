@@ -30,7 +30,7 @@ namespace EblanDev.ScenarioCore.UIFramework
         {
             Bus = (B) Activator.CreateInstance(typeof(B));
             
-            foreach (var system in systems)
+            foreach (var system in _systems)
             {
                 system.Prepare();
                 if (system.TryGetData(out var SOData))
@@ -39,7 +39,7 @@ namespace EblanDev.ScenarioCore.UIFramework
                 }
             }
 
-            foreach (var system in systems)
+            foreach (var system in _systems)
             {
                 system.Init();
             }

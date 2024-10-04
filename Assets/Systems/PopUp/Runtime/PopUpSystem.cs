@@ -23,13 +23,13 @@ namespace EblanDev.ScenarioCore.Systems.PopUpSystemUnit
             }
         }
 
-        public static void SetupBus(UIBus bus)
+        public static void SetBus(UIBus bus)
         {
             foreach (var popUp in popUpsSt)
             {
                 if (popUp is IBusPopUp<UIBus> busPopUp)
                 {
-                    busPopUp.SetupBus(bus);
+                    busPopUp.SetBus(bus);
                 }
             }
         }

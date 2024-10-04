@@ -4,6 +4,6 @@ namespace EblanDev.ScenarioCore.Systems.PopUpSystemUnit
 {
     public interface IBusPopUp<Bus> where Bus: UIBus
     {
-        public void SetupBus(Bus bus);
+        public void SetBus(Bus bus);
     }
 }
